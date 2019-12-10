@@ -1,8 +1,8 @@
 import java.io.File;
-import java.io.IOException;
 import java.io.FileInputStream;
-import java.util.Scanner;
+import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 /**
  * This class generates txt files to use for the Scrabble Word Generator
@@ -22,12 +22,6 @@ public class DocGenerator {
 			int i = line.indexOf('\t');
 			String dictionary_word = line.substring(0,i);
 			String word_definition = line.substring(i); // with tab in the front
-//			if (!scan.hasNextLine()) {
-//				pw.print(dictionary_word);
-//			}
-//			else {
-//				pw.println(dictionary_word);
-//			}
 			pw.println(dictionary_word);
 		}
 		scan.close();
@@ -67,7 +61,6 @@ public class DocGenerator {
 			switch (word.substring(0,1).toUpperCase()) {
 			case "A":
 				pwA.println(word);
-//				System.out.println("Should add A word");
 				break;
 			case "B":
 				pwB.println(word);
@@ -173,7 +166,6 @@ public class DocGenerator {
 		pwX.close();
 		pwY.close();
 		pwZ.close();
-		
 	}
 	
 	public static void main(String[] args) {
