@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.IOException;
+import java.lang.Math;
 import java.util.Scanner;
 
 /**
@@ -10,22 +11,6 @@ import java.util.Scanner;
  * @version Version 1
  */
 public class wordGenerator {
-	public static String getDefinition(String word) throws IOException {
-		Scanner scan = new Scanner(new File("docs/Collins_Scrabble_Words_(2019)_with_definitions.txt"));
-		String title = scan.nextLine();
-		scan.nextLine();
-		String word_definition = "No definition";
-		while (scan.hasNextLine()) {
-			String line = scan.nextLine();
-			int i = line.indexOf('\t');
-			String dictionary_word = line.substring(0, i);
-			if (dictionary_word.equals(word.toUpperCase())) {
-				word_definition = line.substring(i + 1);
-			}
-		}
-		scan.close();
-		return word_definition;
-	}
 	
 	public static boolean isScrabbleWord(String word) throws IOException {
 		
@@ -129,11 +114,25 @@ public class wordGenerator {
 		return false; // Does not have the word in the scrabble dictionary
 	}
 	
+	public static char[] randomLetterGenerator(int num) {
+		char[] returnChars = new char[num];
+		for (int i = 0; i < num; ++i) {
+			int randomNum = (int)(Math.random()*(26)+1);
+			char letter = (char)(randomNum + 64);
+			System.out.println("randomNum: " + randomNum + "\t  letter: " + letter);
+			returnChars[i] = letter;
+		}
+		return null;
+	}
+	
 	public static void main(String[] args) {
 		try {
-			String word = "pool";
+			randomLetterGenerator(23);
+			String word = "xylophone";
 			System.out.println(word + " is a word: " + isScrabbleWord(word));
-			System.out.println(word + ": " + getDefinition(word));
+			ScrabbleWord sWord = new ScrabbleWord(word);
+			System.out.println(sWord.getword() + " score: " + sWord.getScore());
+			System.out.println(sWord.getword() + ": " + sWord.getDefinition());
 		}
 		catch (IOException excpt) {
 			System.out.println("Caught IOException: " + excpt.getMessage());
