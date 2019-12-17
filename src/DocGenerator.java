@@ -408,601 +408,679 @@ public class DocGenerator {
 			int len = word.length();
 			switch (word.substring(0,1).toUpperCase()) {
 			case "A":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2A.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3A.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4A.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5A.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6A.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7A.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8A.println(word);
+					break;
 				}
 				break;
 			case "B":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2B.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3B.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4B.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5B.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6B.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7B.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8B.println(word);
+					break;
 				}
 				break;
 			case "C":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2C.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3C.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4C.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5C.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6C.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7C.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8C.println(word);
+					break;
 				}
 				break;
 			case "D":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2D.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3D.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4D.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5D.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6D.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7D.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8D.println(word);
+					break;
 				}
 				break;
 			case "E":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2E.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3E.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4E.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5E.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6E.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7E.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8E.println(word);
+					break;
 				}
 				break;
 			case "F":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2F.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3F.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4F.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5F.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6F.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7F.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8F.println(word);
+					break;
 				}
 				break;
 			case "G":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2G.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3G.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4G.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5G.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6G.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7G.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8G.println(word);
+					break;
 				}
 				break;
 			case "H":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2H.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3H.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4H.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5H.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6H.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7H.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8H.println(word);
+					break;
 				}
 				break;
 			case "I":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2I.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3I.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4I.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5I.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6I.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7I.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8I.println(word);
+					break;
 				}
 				break;
 			case "J":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2J.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3J.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4J.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5J.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6J.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7J.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8J.println(word);
+					break;
 				}
 				break;
 			case "K":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2K.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3K.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4K.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5K.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6K.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7K.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8K.println(word);
+					break;
 				}
 				break;
 			case "L":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2L.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3L.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4L.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5L.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6L.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7L.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8L.println(word);
+					break;
 				}
 				break;
 			case "M":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2M.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3M.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4M.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5M.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6M.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7M.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8M.println(word);
+					break;
 				}
 				break;
 			case "N":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2N.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3N.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4N.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5N.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6N.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7N.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8N.println(word);
+					break;
 				}
 				break;
 			case "O":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2O.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3O.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4O.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5O.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6O.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7O.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8O.println(word);
+					break;
 				}
 				break;
 			case "P":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2P.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3P.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4P.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5P.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6P.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7P.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8P.println(word);
+					break;
 				}
 				break;
 			case "Q":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2Q.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3Q.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4Q.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5Q.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6Q.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7Q.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8Q.println(word);
+					break;
 				}
 				break;
 			case "R":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2R.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3R.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4R.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5R.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6R.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7R.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8R.println(word);
+					break;
 				}
 				break;
 			case "S":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2S.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3S.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4S.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5S.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6S.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7S.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8S.println(word);
+					break;
 				}
 				break;
 			case "T":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2T.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3T.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4T.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5T.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6T.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7T.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8T.println(word);
+					break;
 				}
 				break;
 			case "U":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2U.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3U.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4U.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5U.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6U.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7U.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8U.println(word);
+					break;
 				}
 				break;
 			case "V":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2V.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3V.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4V.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5V.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6V.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7V.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8V.println(word);
+					break;
 				}
 				break;
 			case "W":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2W.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3W.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4W.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5W.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6W.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7W.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8W.println(word);
+					break;
 				}
 				break;
 			case "X":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2X.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3X.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4X.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5X.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6X.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7X.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8X.println(word);
+					break;
 				}
 				break;
 			case "Y":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2Y.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3Y.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4Y.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5Y.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6Y.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7Y.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8Y.println(word);
+					break;
 				}
 				break;
 			case "Z":
-				if (len <= 2) {
+				switch (len) {
+				case 1:
+				case 2:
 					pw2Z.println(word);
-				}
-				else if (len == 3) {
+					break;
+				case 3:
 					pw3Z.println(word);
-				}
-				else if (len == 4) {
+					break;
+				case 4:
 					pw4Z.println(word);
-				}
-				else if (len == 5) {
+					break;
+				case 5:
 					pw5Z.println(word);
-				}
-				else if (len == 6) {
+					break;
+				case 6:
 					pw6Z.println(word);
-				}
-				else if (len == 7) {
+					break;
+				case 7:
 					pw7Z.println(word);
-				}
-				else {
+					break;
+				default:
 					pw8Z.println(word);
+					break;
 				}
 				break;
 			}
