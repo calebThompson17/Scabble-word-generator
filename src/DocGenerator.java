@@ -176,7 +176,7 @@ public class DocGenerator {
 		PrintWriter pw5A = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithA"));
 		PrintWriter pw6A = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithA"));
 		PrintWriter pw7A = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithA"));
-		PrintWriter pw8A = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithA"));
+		PrintWriter pw8A = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithA"));
 		
 
 		PrintWriter pw2B = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithB"));
@@ -185,7 +185,7 @@ public class DocGenerator {
 		PrintWriter pw5B = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithB"));
 		PrintWriter pw6B = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithB"));
 		PrintWriter pw7B = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithB"));
-		PrintWriter pw8B = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithB"));
+		PrintWriter pw8B = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithB"));
 		
 
 		PrintWriter pw2C = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithC"));
@@ -194,7 +194,7 @@ public class DocGenerator {
 		PrintWriter pw5C = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithC"));
 		PrintWriter pw6C = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithC"));
 		PrintWriter pw7C = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithC"));
-		PrintWriter pw8C = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithC"));
+		PrintWriter pw8C = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithC"));
 		
 
 		PrintWriter pw2D = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithD"));
@@ -203,7 +203,7 @@ public class DocGenerator {
 		PrintWriter pw5D = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithD"));
 		PrintWriter pw6D = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithD"));
 		PrintWriter pw7D = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithD"));
-		PrintWriter pw8D = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithD"));
+		PrintWriter pw8D = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithD"));
 		
 
 		PrintWriter pw2E = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithE"));
@@ -212,7 +212,7 @@ public class DocGenerator {
 		PrintWriter pw5E = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithE"));
 		PrintWriter pw6E = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithE"));
 		PrintWriter pw7E = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithE"));
-		PrintWriter pw8E = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithE"));
+		PrintWriter pw8E = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithE"));
 		
 
 		PrintWriter pw2F = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithF"));
@@ -221,7 +221,7 @@ public class DocGenerator {
 		PrintWriter pw5F = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithF"));
 		PrintWriter pw6F = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithF"));
 		PrintWriter pw7F = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithF"));
-		PrintWriter pw8F = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithF"));
+		PrintWriter pw8F = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithF"));
 		
 
 		PrintWriter pw2G = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithG"));
@@ -230,7 +230,7 @@ public class DocGenerator {
 		PrintWriter pw5G = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithG"));
 		PrintWriter pw6G = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithG"));
 		PrintWriter pw7G = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithG"));
-		PrintWriter pw8G = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithG"));
+		PrintWriter pw8G = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithG"));
 		
 
 		PrintWriter pw2H = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithH"));
@@ -239,7 +239,7 @@ public class DocGenerator {
 		PrintWriter pw5H = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithH"));
 		PrintWriter pw6H = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithH"));
 		PrintWriter pw7H = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithH"));
-		PrintWriter pw8H = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithH"));
+		PrintWriter pw8H = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithH"));
 		
 
 		PrintWriter pw2I = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithI"));
@@ -248,7 +248,7 @@ public class DocGenerator {
 		PrintWriter pw5I = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithI"));
 		PrintWriter pw6I = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithI"));
 		PrintWriter pw7I = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithI"));
-		PrintWriter pw8I = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithI"));
+		PrintWriter pw8I = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithI"));
 		
 
 		PrintWriter pw2J = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithJ"));
@@ -257,7 +257,7 @@ public class DocGenerator {
 		PrintWriter pw5J = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithJ"));
 		PrintWriter pw6J = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithJ"));
 		PrintWriter pw7J = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithJ"));
-		PrintWriter pw8J = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithJ"));
+		PrintWriter pw8J = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithJ"));
 		
 
 		PrintWriter pw2K = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithK"));
@@ -266,7 +266,7 @@ public class DocGenerator {
 		PrintWriter pw5K = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithK"));
 		PrintWriter pw6K = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithK"));
 		PrintWriter pw7K = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithK"));
-		PrintWriter pw8K = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithK"));
+		PrintWriter pw8K = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithK"));
 		
 
 		PrintWriter pw2L = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithL"));
@@ -275,7 +275,7 @@ public class DocGenerator {
 		PrintWriter pw5L = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithL"));
 		PrintWriter pw6L = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithL"));
 		PrintWriter pw7L = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithL"));
-		PrintWriter pw8L = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithL"));
+		PrintWriter pw8L = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithL"));
 		
 
 		PrintWriter pw2M = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithM"));
@@ -284,7 +284,7 @@ public class DocGenerator {
 		PrintWriter pw5M = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithM"));
 		PrintWriter pw6M = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithM"));
 		PrintWriter pw7M = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithM"));
-		PrintWriter pw8M = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithM"));
+		PrintWriter pw8M = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithM"));
 		
 
 		PrintWriter pw2N = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithN"));
@@ -293,7 +293,7 @@ public class DocGenerator {
 		PrintWriter pw5N = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithN"));
 		PrintWriter pw6N = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithN"));
 		PrintWriter pw7N = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithN"));
-		PrintWriter pw8N = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithN"));
+		PrintWriter pw8N = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithN"));
 		
 
 		PrintWriter pw2O = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithO"));
@@ -302,7 +302,7 @@ public class DocGenerator {
 		PrintWriter pw5O = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithO"));
 		PrintWriter pw6O = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithO"));
 		PrintWriter pw7O = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithO"));
-		PrintWriter pw8O = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithO"));
+		PrintWriter pw8O = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithO"));
 		
 
 		PrintWriter pw2P = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithP"));
@@ -311,7 +311,7 @@ public class DocGenerator {
 		PrintWriter pw5P = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithP"));
 		PrintWriter pw6P = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithP"));
 		PrintWriter pw7P = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithP"));
-		PrintWriter pw8P = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithP"));
+		PrintWriter pw8P = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithP"));
 		
 
 		PrintWriter pw2Q = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithQ"));
@@ -320,7 +320,7 @@ public class DocGenerator {
 		PrintWriter pw5Q = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithQ"));
 		PrintWriter pw6Q = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithQ"));
 		PrintWriter pw7Q = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithQ"));
-		PrintWriter pw8Q = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithQ"));
+		PrintWriter pw8Q = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithQ"));
 		
 
 		PrintWriter pw2R = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithR"));
@@ -329,7 +329,7 @@ public class DocGenerator {
 		PrintWriter pw5R = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithR"));
 		PrintWriter pw6R = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithR"));
 		PrintWriter pw7R = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithR"));
-		PrintWriter pw8R = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithR"));
+		PrintWriter pw8R = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithR"));
 		
 
 		PrintWriter pw2S = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithS"));
@@ -338,7 +338,7 @@ public class DocGenerator {
 		PrintWriter pw5S = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithS"));
 		PrintWriter pw6S = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithS"));
 		PrintWriter pw7S = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithS"));
-		PrintWriter pw8S = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithS"));
+		PrintWriter pw8S = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithS"));
 		
 
 		PrintWriter pw2T = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithT"));
@@ -347,7 +347,7 @@ public class DocGenerator {
 		PrintWriter pw5T = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithT"));
 		PrintWriter pw6T = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithT"));
 		PrintWriter pw7T = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithT"));
-		PrintWriter pw8T = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithT"));
+		PrintWriter pw8T = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithT"));
 		
 
 		PrintWriter pw2U = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithU"));
@@ -356,7 +356,7 @@ public class DocGenerator {
 		PrintWriter pw5U = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithU"));
 		PrintWriter pw6U = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithU"));
 		PrintWriter pw7U = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithU"));
-		PrintWriter pw8U = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithU"));
+		PrintWriter pw8U = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithU"));
 		
 
 		PrintWriter pw2V = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithV"));
@@ -365,7 +365,7 @@ public class DocGenerator {
 		PrintWriter pw5V = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithV"));
 		PrintWriter pw6V = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithV"));
 		PrintWriter pw7V = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithV"));
-		PrintWriter pw8V = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithV"));
+		PrintWriter pw8V = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithV"));
 		
 
 		PrintWriter pw2W = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithW"));
@@ -374,7 +374,7 @@ public class DocGenerator {
 		PrintWriter pw5W = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithW"));
 		PrintWriter pw6W = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithW"));
 		PrintWriter pw7W = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithW"));
-		PrintWriter pw8W = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithW"));
+		PrintWriter pw8W = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithW"));
 		
 
 		PrintWriter pw2X = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithX"));
@@ -383,7 +383,7 @@ public class DocGenerator {
 		PrintWriter pw5X = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithX"));
 		PrintWriter pw6X = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithX"));
 		PrintWriter pw7X = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithX"));
-		PrintWriter pw8X = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithX"));
+		PrintWriter pw8X = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithX"));
 		
 
 		PrintWriter pw2Y = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithY"));
@@ -392,7 +392,7 @@ public class DocGenerator {
 		PrintWriter pw5Y = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithY"));
 		PrintWriter pw6Y = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithY"));
 		PrintWriter pw7Y = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithY"));
-		PrintWriter pw8Y = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithY"));
+		PrintWriter pw8Y = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithY"));
 		
 
 		PrintWriter pw2Z = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithZ"));
@@ -401,7 +401,7 @@ public class DocGenerator {
 		PrintWriter pw5Z = new PrintWriter(new File("docs/wordLengthStartingWith/fiveLetterWords/fiveLetterWordsStartingWithZ"));
 		PrintWriter pw6Z = new PrintWriter(new File("docs/wordLengthStartingWith/sixLetterWords/sixLetterWordsStartingWithZ"));
 		PrintWriter pw7Z = new PrintWriter(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithZ"));
-		PrintWriter pw8Z = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightLetterWordsStartingWithZ"));
+		PrintWriter pw8Z = new PrintWriter(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithZ"));
 		
 		while (scan.hasNextLine()) {
 			String word = scan.nextLine();
