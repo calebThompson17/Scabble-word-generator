@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.Math;
 import java.util.Scanner;
+import java.util.Stack;
 
 /**
  * This class reads through the txt files produced in DocGenerator.java,
@@ -122,13 +123,21 @@ public class wordGenerator {
 			System.out.println("randomNum: " + randomNum + "\t  letter: " + letter);
 			returnChars[i] = letter;
 		}
+		return returnChars;
+	}
+	
+	public static Stack<String> stringStackToMasterScrabbleWordList(Stack<String> stringStack){
+		return null;
+	}
+	
+	public static String[] charArrayToMasterScrabbleWordList(char[] charArray) {
 		return null;
 	}
 	
 	public static void main(String[] args) {
 		try {
-			randomLetterGenerator(23);
-			String word = "xylophone";
+			String word = new String(randomLetterGenerator(3));
+//			String word = "azo";
 			System.out.println(word + " is a word: " + isScrabbleWord(word));
 			ScrabbleWord sWord = new ScrabbleWord(word);
 			System.out.println(sWord.getword() + " score: " + sWord.getScore());
