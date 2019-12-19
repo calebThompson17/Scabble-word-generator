@@ -47,7 +47,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithA"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithA"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithA"));
 				break;
 			}
 			break;
@@ -73,7 +73,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithB"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithB"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithB"));
 				break;
 			}
 			break;
@@ -99,7 +99,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithC"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithC"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithC"));
 				break;
 			}
 			break;
@@ -125,7 +125,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithD"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithD"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithD"));
 				break;
 			}
 			break;
@@ -151,7 +151,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithE"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithE"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithE"));
 				break;
 			}
 			break;
@@ -177,7 +177,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithF"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithF"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithF"));
 				break;
 			}
 			break;
@@ -203,7 +203,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithG"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithG"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithG"));
 				break;
 			}
 			break;
@@ -229,7 +229,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithH"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithH"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithH"));
 				break;
 			}
 			break;
@@ -255,7 +255,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithI"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithI"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithI"));
 				break;
 			}
 			break;
@@ -281,7 +281,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithJ"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithJ"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithJ"));
 				break;
 			}
 			break;
@@ -307,7 +307,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithK"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithK"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithK"));
 				break;
 			}
 			break;
@@ -333,7 +333,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithL"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithL"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithL"));
 				break;
 			}
 			break;
@@ -359,7 +359,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithM"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithM"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithM"));
 				break;
 			}
 			break;
@@ -385,7 +385,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithN"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithN"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithN"));
 				break;
 			}
 			break;
@@ -411,7 +411,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithO"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithO"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithO"));
 				break;
 			}
 			break;
@@ -437,7 +437,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithP"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithP"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithP"));
 				break;
 			}
 			break;
@@ -463,7 +463,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithQ"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithQ"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithQ"));
 				break;
 			}
 			break;
@@ -489,7 +489,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithR"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithR"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithR"));
 				break;
 			}
 			break;
@@ -515,7 +515,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithS"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithS"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithS"));
 				break;
 			}
 			break;
@@ -541,7 +541,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithT"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithT"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithT"));
 				break;
 			}
 			break;
@@ -567,7 +567,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithU"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithU"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithU"));
 				break;
 			}
 			break;
@@ -593,7 +593,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithV"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithV"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithV"));
 				break;
 			}
 			break;
@@ -619,7 +619,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithW"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithW"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithW"));
 				break;
 			}
 			break;
@@ -645,7 +645,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithX"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithX"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithX"));
 				break;
 			}
 			break;
@@ -671,7 +671,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithY"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithY"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithY"));
 				break;
 			}
 			break;
@@ -697,7 +697,7 @@ public class wordGenerator {
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithZ"));
 				break;
 			default:
-				scan = new Scanner(new File("docs/wordLengthStartingWith/eightOrMoreLetterWords/eightOrMoreLetterWordsStartingWithZ"));
+				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithZ"));
 				break;
 			}
 			break;
@@ -737,7 +737,7 @@ public class wordGenerator {
 	public static void main(String[] args) {
 		try {
 //			String word = new String(randomLetterGenerator(3));
-			String word = "dude";
+			String word = "YEASTINESSES";
 			System.out.println(word + " is a word: " + isScrabbleWord(word));
 			ScrabbleWord sWord = new ScrabbleWord(word);
 			System.out.println(sWord.getword() + " score: " + sWord.getScore());
