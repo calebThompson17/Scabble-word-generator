@@ -46,8 +46,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithA"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithA"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithA"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithA"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithA"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithA"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithA"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithA"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithA"));
 				break;
 			}
 			break;
@@ -72,8 +93,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithB"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithB"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithB"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithB"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithB"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithB"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithB"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithB"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithB"));
 				break;
 			}
 			break;
@@ -98,8 +140,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithC"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithC"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithC"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithC"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithC"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithC"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithC"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithC"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithC"));
 				break;
 			}
 			break;
@@ -124,8 +187,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithD"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithD"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithD"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithD"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithD"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithD"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithD"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithD"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithD"));
 				break;
 			}
 			break;
@@ -150,8 +234,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithE"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithE"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithE"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithE"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithE"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithE"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithE"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithE"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithE"));
 				break;
 			}
 			break;
@@ -176,8 +281,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithF"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithF"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithF"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithF"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithF"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithF"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithF"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithF"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithF"));
 				break;
 			}
 			break;
@@ -202,8 +328,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithG"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithG"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithG"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithG"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithG"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithG"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithG"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithG"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithG"));
 				break;
 			}
 			break;
@@ -228,8 +375,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithH"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithH"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithH"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithH"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithH"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithH"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithH"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithH"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithH"));
 				break;
 			}
 			break;
@@ -254,8 +422,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithI"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithI"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithI"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithI"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithI"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithI"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithI"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithI"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithI"));
 				break;
 			}
 			break;
@@ -280,8 +469,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithJ"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithJ"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithJ"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithJ"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithJ"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithJ"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithJ"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithJ"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithJ"));
 				break;
 			}
 			break;
@@ -306,8 +516,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithK"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithK"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithK"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithK"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithK"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithK"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithK"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithK"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithK"));
 				break;
 			}
 			break;
@@ -332,8 +563,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithL"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithL"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithL"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithL"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithL"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithL"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithL"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithL"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithL"));
 				break;
 			}
 			break;
@@ -358,8 +610,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithM"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithM"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithM"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithM"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithM"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithM"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithM"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithM"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithM"));
 				break;
 			}
 			break;
@@ -384,8 +657,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithN"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithN"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithN"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithN"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithN"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithN"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithN"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithN"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithN"));
 				break;
 			}
 			break;
@@ -410,8 +704,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithO"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithO"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithO"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithO"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithO"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithO"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithO"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithO"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithO"));
 				break;
 			}
 			break;
@@ -436,8 +751,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithP"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithP"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithP"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithP"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithP"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithP"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithP"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithP"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithP"));
 				break;
 			}
 			break;
@@ -462,8 +798,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithQ"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithQ"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithQ"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithQ"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithQ"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithQ"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithQ"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithQ"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithQ"));
 				break;
 			}
 			break;
@@ -488,8 +845,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithR"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithR"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithR"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithR"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithR"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithR"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithR"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithR"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithR"));
 				break;
 			}
 			break;
@@ -514,8 +892,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithS"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithS"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithS"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithS"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithS"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithS"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithS"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithS"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithS"));
 				break;
 			}
 			break;
@@ -540,8 +939,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithT"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithT"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithT"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithT"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithT"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithT"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithT"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithT"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithT"));
 				break;
 			}
 			break;
@@ -566,8 +986,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithU"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithU"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithU"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithU"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithU"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithU"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithU"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithU"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithU"));
 				break;
 			}
 			break;
@@ -592,8 +1033,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithV"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithV"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithV"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithV"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithV"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithV"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithV"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithV"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithV"));
 				break;
 			}
 			break;
@@ -618,8 +1080,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithW"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithW"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithW"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithW"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithW"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithW"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithW"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithW"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithW"));
 				break;
 			}
 			break;
@@ -644,8 +1127,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithX"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithX"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithX"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithX"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithX"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithX"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithX"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithX"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithX"));
 				break;
 			}
 			break;
@@ -670,8 +1174,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithY"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithY"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithY"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithY"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithY"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithY"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithY"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithY"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithY"));
 				break;
 			}
 			break;
@@ -696,8 +1221,29 @@ public class wordGenerator {
 			case 7:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/sevenLetterWords/sevenLetterWordsStartingWithZ"));
 				break;
-			default:
+			case 8:
 				scan = new Scanner(new File("docs/wordLengthStartingWith/eightLetterWords/eightLetterWordsStartingWithZ"));
+				break;
+			case 9:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/nineLetterWords/nineLetterWordsStartingWithZ"));
+				break;
+			case 10:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/tenLetterWords/tenLetterWordsStartingWithZ"));
+				break;
+			case 11:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/elevenLetterWords/elevenLetterWordsStartingWithZ"));
+				break;
+			case 12:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/twelveLetterWords/twelveLetterWordsStartingWithZ"));
+				break;
+			case 13:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/thirteenLetterWords/thirteenLetterWordsStartingWithZ"));
+				break;
+			case 14:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fourteenLetterWords/fourteenLetterWordsStartingWithZ"));
+				break;
+			default:
+				scan = new Scanner(new File("docs/wordLengthStartingWith/fifteenLetterWords/fifteenLetterWordsStartingWithZ"));
 				break;
 			}
 			break;
