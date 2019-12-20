@@ -38,6 +38,7 @@ public class ScrabbleWord {
 			String dictionary_word = line.substring(0, i);
 			if (dictionary_word.equals(word.toUpperCase())) {
 				word_definition = line.substring(i + 1);
+				break;
 			}
 		}
 		scan.close();
@@ -80,4 +81,20 @@ public class ScrabbleWord {
 		return score;
 	}
 
+	@Override
+	public String toString() {
+		return this.word;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof ScrabbleWord) {
+			ScrabbleWord other = (ScrabbleWord) obj;
+			if (this.word == other.word) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 }
