@@ -34,6 +34,2362 @@ public class DocGenerator {
 		pw.close();
 	}
 	
+	public static void generateDefineWordLengthStartingWithFiles() throws IOException {
+		String separator = System.getProperty("file.separator");
+		Scanner scan = new Scanner(new File("docs" + separator + "Collins_Scrabble_Words_(2019)_with_definitions.txt"));
+		PrintWriter pw2A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithA"));
+		PrintWriter pw3A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithA"));
+		PrintWriter pw4A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithA"));
+		PrintWriter pw5A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithA"));
+		PrintWriter pw6A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithA"));
+		PrintWriter pw7A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithA"));
+		PrintWriter pw8A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithA"));
+		PrintWriter pw9A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithA"));
+		PrintWriter pw10A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithA"));
+		PrintWriter pw11A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithA"));
+		PrintWriter pw12A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithA"));
+		PrintWriter pw13A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithA"));
+		PrintWriter pw14A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithA"));
+		PrintWriter pw15A = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithA"));
+
+		PrintWriter pw2B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithB"));
+		PrintWriter pw3B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithB"));
+		PrintWriter pw4B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithB"));
+		PrintWriter pw5B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithB"));
+		PrintWriter pw6B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithB"));
+		PrintWriter pw7B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithB"));
+		PrintWriter pw8B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithB"));
+		PrintWriter pw9B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithB"));
+		PrintWriter pw10B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithB"));
+		PrintWriter pw11B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithB"));
+		PrintWriter pw12B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithB"));
+		PrintWriter pw13B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithB"));
+		PrintWriter pw14B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithB"));
+		PrintWriter pw15B = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithB"));
+
+		PrintWriter pw2C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithC"));
+		PrintWriter pw3C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithC"));
+		PrintWriter pw4C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithC"));
+		PrintWriter pw5C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithC"));
+		PrintWriter pw6C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithC"));
+		PrintWriter pw7C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithC"));
+		PrintWriter pw8C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithC"));
+		PrintWriter pw9C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithC"));
+		PrintWriter pw10C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithC"));
+		PrintWriter pw11C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithC"));
+		PrintWriter pw12C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithC"));
+		PrintWriter pw13C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithC"));
+		PrintWriter pw14C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithC"));
+		PrintWriter pw15C = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithC"));
+
+		PrintWriter pw2D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithD"));
+		PrintWriter pw3D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithD"));
+		PrintWriter pw4D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithD"));
+		PrintWriter pw5D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithD"));
+		PrintWriter pw6D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithD"));
+		PrintWriter pw7D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithD"));
+		PrintWriter pw8D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithD"));
+		PrintWriter pw9D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithD"));
+		PrintWriter pw10D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithD"));
+		PrintWriter pw11D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithD"));
+		PrintWriter pw12D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithD"));
+		PrintWriter pw13D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithD"));
+		PrintWriter pw14D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithD"));
+		PrintWriter pw15D = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithD"));
+
+		PrintWriter pw2E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithE"));
+		PrintWriter pw3E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithE"));
+		PrintWriter pw4E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithE"));
+		PrintWriter pw5E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithE"));
+		PrintWriter pw6E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithE"));
+		PrintWriter pw7E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithE"));
+		PrintWriter pw8E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithE"));
+		PrintWriter pw9E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithE"));
+		PrintWriter pw10E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithE"));
+		PrintWriter pw11E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithE"));
+		PrintWriter pw12E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithE"));
+		PrintWriter pw13E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithE"));
+		PrintWriter pw14E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithE"));
+		PrintWriter pw15E = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithE"));
+
+		PrintWriter pw2F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithF"));
+		PrintWriter pw3F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithF"));
+		PrintWriter pw4F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithF"));
+		PrintWriter pw5F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithF"));
+		PrintWriter pw6F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithF"));
+		PrintWriter pw7F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithF"));
+		PrintWriter pw8F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithF"));
+		PrintWriter pw9F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithF"));
+		PrintWriter pw10F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithF"));
+		PrintWriter pw11F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithF"));
+		PrintWriter pw12F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithF"));
+		PrintWriter pw13F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithF"));
+		PrintWriter pw14F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithF"));
+		PrintWriter pw15F = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithF"));
+
+		PrintWriter pw2G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithG"));
+		PrintWriter pw3G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithG"));
+		PrintWriter pw4G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithG"));
+		PrintWriter pw5G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithG"));
+		PrintWriter pw6G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithG"));
+		PrintWriter pw7G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithG"));
+		PrintWriter pw8G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithG"));
+		PrintWriter pw9G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithG"));
+		PrintWriter pw10G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithG"));
+		PrintWriter pw11G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithG"));
+		PrintWriter pw12G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithG"));
+		PrintWriter pw13G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithG"));
+		PrintWriter pw14G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithG"));
+		PrintWriter pw15G = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithG"));
+
+		PrintWriter pw2H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithH"));
+		PrintWriter pw3H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithH"));
+		PrintWriter pw4H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithH"));
+		PrintWriter pw5H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithH"));
+		PrintWriter pw6H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithH"));
+		PrintWriter pw7H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithH"));
+		PrintWriter pw8H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithH"));
+		PrintWriter pw9H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithH"));
+		PrintWriter pw10H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithH"));
+		PrintWriter pw11H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithH"));
+		PrintWriter pw12H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithH"));
+		PrintWriter pw13H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithH"));
+		PrintWriter pw14H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithH"));
+		PrintWriter pw15H = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithH"));
+
+		PrintWriter pw2I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithI"));
+		PrintWriter pw3I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithI"));
+		PrintWriter pw4I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithI"));
+		PrintWriter pw5I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithI"));
+		PrintWriter pw6I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithI"));
+		PrintWriter pw7I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithI"));
+		PrintWriter pw8I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithI"));
+		PrintWriter pw9I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithI"));
+		PrintWriter pw10I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithI"));
+		PrintWriter pw11I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithI"));
+		PrintWriter pw12I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithI"));
+		PrintWriter pw13I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithI"));
+		PrintWriter pw14I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithI"));
+		PrintWriter pw15I = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithI"));
+
+		PrintWriter pw2J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithJ"));
+		PrintWriter pw3J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithJ"));
+		PrintWriter pw4J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithJ"));
+		PrintWriter pw5J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithJ"));
+		PrintWriter pw6J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithJ"));
+		PrintWriter pw7J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithJ"));
+		PrintWriter pw8J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithJ"));
+		PrintWriter pw9J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithJ"));
+		PrintWriter pw10J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithJ"));
+		PrintWriter pw11J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithJ"));
+		PrintWriter pw12J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithJ"));
+		PrintWriter pw13J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithJ"));
+		PrintWriter pw14J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithJ"));
+		PrintWriter pw15J = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithJ"));
+
+		PrintWriter pw2K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithK"));
+		PrintWriter pw3K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithK"));
+		PrintWriter pw4K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithK"));
+		PrintWriter pw5K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithK"));
+		PrintWriter pw6K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithK"));
+		PrintWriter pw7K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithK"));
+		PrintWriter pw8K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithK"));
+		PrintWriter pw9K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithK"));
+		PrintWriter pw10K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithK"));
+		PrintWriter pw11K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithK"));
+		PrintWriter pw12K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithK"));
+		PrintWriter pw13K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithK"));
+		PrintWriter pw14K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithK"));
+		PrintWriter pw15K = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithK"));
+
+		PrintWriter pw2L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithL"));
+		PrintWriter pw3L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithL"));
+		PrintWriter pw4L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithL"));
+		PrintWriter pw5L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithL"));
+		PrintWriter pw6L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithL"));
+		PrintWriter pw7L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithL"));
+		PrintWriter pw8L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithL"));
+		PrintWriter pw9L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithL"));
+		PrintWriter pw10L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithL"));
+		PrintWriter pw11L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithL"));
+		PrintWriter pw12L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithL"));
+		PrintWriter pw13L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithL"));
+		PrintWriter pw14L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithL"));
+		PrintWriter pw15L = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithL"));
+
+		PrintWriter pw2M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithM"));
+		PrintWriter pw3M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithM"));
+		PrintWriter pw4M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithM"));
+		PrintWriter pw5M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithM"));
+		PrintWriter pw6M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithM"));
+		PrintWriter pw7M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithM"));
+		PrintWriter pw8M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithM"));
+		PrintWriter pw9M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithM"));
+		PrintWriter pw10M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithM"));
+		PrintWriter pw11M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithM"));
+		PrintWriter pw12M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithM"));
+		PrintWriter pw13M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithM"));
+		PrintWriter pw14M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithM"));
+		PrintWriter pw15M = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithM"));
+
+		PrintWriter pw2N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithN"));
+		PrintWriter pw3N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithN"));
+		PrintWriter pw4N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithN"));
+		PrintWriter pw5N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithN"));
+		PrintWriter pw6N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithN"));
+		PrintWriter pw7N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithN"));
+		PrintWriter pw8N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithN"));
+		PrintWriter pw9N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithN"));
+		PrintWriter pw10N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithN"));
+		PrintWriter pw11N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithN"));
+		PrintWriter pw12N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithN"));
+		PrintWriter pw13N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithN"));
+		PrintWriter pw14N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithN"));
+		PrintWriter pw15N = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithN"));
+
+		PrintWriter pw2O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithO"));
+		PrintWriter pw3O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithO"));
+		PrintWriter pw4O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithO"));
+		PrintWriter pw5O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithO"));
+		PrintWriter pw6O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithO"));
+		PrintWriter pw7O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithO"));
+		PrintWriter pw8O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithO"));
+		PrintWriter pw9O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithO"));
+		PrintWriter pw10O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithO"));
+		PrintWriter pw11O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithO"));
+		PrintWriter pw12O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithO"));
+		PrintWriter pw13O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithO"));
+		PrintWriter pw14O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithO"));
+		PrintWriter pw15O = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithO"));
+
+		PrintWriter pw2P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithP"));
+		PrintWriter pw3P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithP"));
+		PrintWriter pw4P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithP"));
+		PrintWriter pw5P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithP"));
+		PrintWriter pw6P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithP"));
+		PrintWriter pw7P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithP"));
+		PrintWriter pw8P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithP"));
+		PrintWriter pw9P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithP"));
+		PrintWriter pw10P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithP"));
+		PrintWriter pw11P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithP"));
+		PrintWriter pw12P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithP"));
+		PrintWriter pw13P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithP"));
+		PrintWriter pw14P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithP"));
+		PrintWriter pw15P = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithP"));
+
+		PrintWriter pw2Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithQ"));
+		PrintWriter pw3Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithQ"));
+		PrintWriter pw4Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithQ"));
+		PrintWriter pw5Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithQ"));
+		PrintWriter pw6Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithQ"));
+		PrintWriter pw7Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithQ"));
+		PrintWriter pw8Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithQ"));
+		PrintWriter pw9Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithQ"));
+		PrintWriter pw10Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithQ"));
+		PrintWriter pw11Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithQ"));
+		PrintWriter pw12Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithQ"));
+		PrintWriter pw13Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithQ"));
+		PrintWriter pw14Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithQ"));
+		PrintWriter pw15Q = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithQ"));
+
+		PrintWriter pw2R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithR"));
+		PrintWriter pw3R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithR"));
+		PrintWriter pw4R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithR"));
+		PrintWriter pw5R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithR"));
+		PrintWriter pw6R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithR"));
+		PrintWriter pw7R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithR"));
+		PrintWriter pw8R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithR"));
+		PrintWriter pw9R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithR"));
+		PrintWriter pw10R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithR"));
+		PrintWriter pw11R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithR"));
+		PrintWriter pw12R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithR"));
+		PrintWriter pw13R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithR"));
+		PrintWriter pw14R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithR"));
+		PrintWriter pw15R = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithR"));
+
+		PrintWriter pw2S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithS"));
+		PrintWriter pw3S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithS"));
+		PrintWriter pw4S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithS"));
+		PrintWriter pw5S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithS"));
+		PrintWriter pw6S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithS"));
+		PrintWriter pw7S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithS"));
+		PrintWriter pw8S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithS"));
+		PrintWriter pw9S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithS"));
+		PrintWriter pw10S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithS"));
+		PrintWriter pw11S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithS"));
+		PrintWriter pw12S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithS"));
+		PrintWriter pw13S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithS"));
+		PrintWriter pw14S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithS"));
+		PrintWriter pw15S = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithS"));
+
+		PrintWriter pw2T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithT"));
+		PrintWriter pw3T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithT"));
+		PrintWriter pw4T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithT"));
+		PrintWriter pw5T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithT"));
+		PrintWriter pw6T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithT"));
+		PrintWriter pw7T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithT"));
+		PrintWriter pw8T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithT"));
+		PrintWriter pw9T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithT"));
+		PrintWriter pw10T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithT"));
+		PrintWriter pw11T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithT"));
+		PrintWriter pw12T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithT"));
+		PrintWriter pw13T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithT"));
+		PrintWriter pw14T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithT"));
+		PrintWriter pw15T = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithT"));
+
+		PrintWriter pw2U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithU"));
+		PrintWriter pw3U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithU"));
+		PrintWriter pw4U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithU"));
+		PrintWriter pw5U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithU"));
+		PrintWriter pw6U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithU"));
+		PrintWriter pw7U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithU"));
+		PrintWriter pw8U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithU"));
+		PrintWriter pw9U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithU"));
+		PrintWriter pw10U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithU"));
+		PrintWriter pw11U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithU"));
+		PrintWriter pw12U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithU"));
+		PrintWriter pw13U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithU"));
+		PrintWriter pw14U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithU"));
+		PrintWriter pw15U = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithU"));
+
+		PrintWriter pw2V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithV"));
+		PrintWriter pw3V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithV"));
+		PrintWriter pw4V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithV"));
+		PrintWriter pw5V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithV"));
+		PrintWriter pw6V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithV"));
+		PrintWriter pw7V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithV"));
+		PrintWriter pw8V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithV"));
+		PrintWriter pw9V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithV"));
+		PrintWriter pw10V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithV"));
+		PrintWriter pw11V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithV"));
+		PrintWriter pw12V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithV"));
+		PrintWriter pw13V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithV"));
+		PrintWriter pw14V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithV"));
+		PrintWriter pw15V = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithV"));
+
+		PrintWriter pw2W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithW"));
+		PrintWriter pw3W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithW"));
+		PrintWriter pw4W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithW"));
+		PrintWriter pw5W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithW"));
+		PrintWriter pw6W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithW"));
+		PrintWriter pw7W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithW"));
+		PrintWriter pw8W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithW"));
+		PrintWriter pw9W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithW"));
+		PrintWriter pw10W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithW"));
+		PrintWriter pw11W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithW"));
+		PrintWriter pw12W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithW"));
+		PrintWriter pw13W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithW"));
+		PrintWriter pw14W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithW"));
+		PrintWriter pw15W = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithW"));
+
+		PrintWriter pw2X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithX"));
+		PrintWriter pw3X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithX"));
+		PrintWriter pw4X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithX"));
+		PrintWriter pw5X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithX"));
+		PrintWriter pw6X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithX"));
+		PrintWriter pw7X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithX"));
+		PrintWriter pw8X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithX"));
+		PrintWriter pw9X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithX"));
+		PrintWriter pw10X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithX"));
+		PrintWriter pw11X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithX"));
+		PrintWriter pw12X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithX"));
+		PrintWriter pw13X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithX"));
+		PrintWriter pw14X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithX"));
+		PrintWriter pw15X = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithX"));
+
+		PrintWriter pw2Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithY"));
+		PrintWriter pw3Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithY"));
+		PrintWriter pw4Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithY"));
+		PrintWriter pw5Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithY"));
+		PrintWriter pw6Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithY"));
+		PrintWriter pw7Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithY"));
+		PrintWriter pw8Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithY"));
+		PrintWriter pw9Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithY"));
+		PrintWriter pw10Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithY"));
+		PrintWriter pw11Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithY"));
+		PrintWriter pw12Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithY"));
+		PrintWriter pw13Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithY"));
+		PrintWriter pw14Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithY"));
+		PrintWriter pw15Y = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithY"));
+
+		PrintWriter pw2Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twoLetterWords" + separator + "defineTwoLetterWordsStartingWithZ"));
+		PrintWriter pw3Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"threeLetterWords" + separator + "defineThreeLetterWordsStartingWithZ"));
+		PrintWriter pw4Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourLetterWords" + separator + "defineFourLetterWordsStartingWithZ"));
+		PrintWriter pw5Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fiveLetterWords" + separator + "defineFiveLetterWordsStartingWithZ"));
+		PrintWriter pw6Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sixLetterWords" + separator + "defineSixLetterWordsStartingWithZ"));
+		PrintWriter pw7Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"sevenLetterWords" + separator + "defineSevenLetterWordsStartingWithZ"));
+		PrintWriter pw8Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"eightLetterWords" + separator + "defineEightLetterWordsStartingWithZ"));
+		PrintWriter pw9Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"nineLetterWords" + separator + "defineNineLetterWordsStartingWithZ"));
+		PrintWriter pw10Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"tenLetterWords" + separator + "defineTenLetterWordsStartingWithZ"));
+		PrintWriter pw11Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"elevenLetterWords" + separator + "defineElevenLetterWordsStartingWithZ"));
+		PrintWriter pw12Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"twelveLetterWords" + separator + "defineTwelveLetterWordsStartingWithZ"));
+		PrintWriter pw13Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"thirteenLetterWords" + separator + "defineThirteenLetterWordsStartingWithZ"));
+		PrintWriter pw14Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fourteenLetterWords" + separator + "defineFourteenLetterWordsStartingWithZ"));
+		PrintWriter pw15Z = new PrintWriter(new File("docs" + separator + "defineWordLengthStartingWith" + separator + 
+				"fifteenLetterWords" + separator + "defineFifteenLetterWordsStartingWithZ"));
+		
+		String title = scan.nextLine();
+		scan.nextLine();
+		while (scan.hasNextLine()) {
+			String line = scan.nextLine();
+//			line = line.strip();
+			int i = line.indexOf('\t');
+			String dictionary_word = line.substring(0,i);
+			switch (dictionary_word.charAt(0)) {
+			case 'A':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2A.println(line);
+					break;
+				case 3:
+					pw3A.println(line);
+					break;
+				case 4:
+					pw4A.println(line);
+					break;
+				case 5:
+					pw5A.println(line);
+					break;
+				case 6:
+					pw6A.println(line);
+					break;
+				case 7:
+					pw7A.println(line);
+					break;
+				case 8:
+					pw8A.println(line);
+					break;
+				case 9:
+					pw9A.println(line);
+					break;
+				case 10:
+					pw10A.println(line);
+					break;
+				case 11:
+					pw11A.println(line);
+					break;
+				case 12:
+					pw12A.println(line);
+					break;
+				case 13:
+					pw13A.println(line);
+					break;
+				case 14:
+					pw14A.println(line);
+					break;
+				default:
+					pw15A.println(line);
+					break;
+				}
+				break;
+			case 'B':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2B.println(line);
+					break;
+				case 3:
+					pw3B.println(line);
+					break;
+				case 4:
+					pw4B.println(line);
+					break;
+				case 5:
+					pw5B.println(line);
+					break;
+				case 6:
+					pw6B.println(line);
+					break;
+				case 7:
+					pw7B.println(line);
+					break;
+				case 8:
+					pw8B.println(line);
+					break;
+				case 9:
+					pw9B.println(line);
+					break;
+				case 10:
+					pw10B.println(line);
+					break;
+				case 11:
+					pw11B.println(line);
+					break;
+				case 12:
+					pw12B.println(line);
+					break;
+				case 13:
+					pw13B.println(line);
+					break;
+				case 14:
+					pw14B.println(line);
+					break;
+				default:
+					pw15B.println(line);
+					break;
+				}
+				break;
+			case 'C':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2C.println(line);
+					break;
+				case 3:
+					pw3C.println(line);
+					break;
+				case 4:
+					pw4C.println(line);
+					break;
+				case 5:
+					pw5C.println(line);
+					break;
+				case 6:
+					pw6C.println(line);
+					break;
+				case 7:
+					pw7C.println(line);
+					break;
+				case 8:
+					pw8C.println(line);
+					break;
+				case 9:
+					pw9C.println(line);
+					break;
+				case 10:
+					pw10C.println(line);
+					break;
+				case 11:
+					pw11C.println(line);
+					break;
+				case 12:
+					pw12C.println(line);
+					break;
+				case 13:
+					pw13C.println(line);
+					break;
+				case 14:
+					pw14C.println(line);
+					break;
+				default:
+					pw15C.println(line);
+					break;
+				}
+				break;
+			case 'D':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2D.println(line);
+					break;
+				case 3:
+					pw3D.println(line);
+					break;
+				case 4:
+					pw4D.println(line);
+					break;
+				case 5:
+					pw5D.println(line);
+					break;
+				case 6:
+					pw6D.println(line);
+					break;
+				case 7:
+					pw7D.println(line);
+					break;
+				case 8:
+					pw8D.println(line);
+					break;
+				case 9:
+					pw9D.println(line);
+					break;
+				case 10:
+					pw10D.println(line);
+					break;
+				case 11:
+					pw11D.println(line);
+					break;
+				case 12:
+					pw12D.println(line);
+					break;
+				case 13:
+					pw13D.println(line);
+					break;
+				case 14:
+					pw14D.println(line);
+					break;
+				default:
+					pw15D.println(line);
+					break;
+				}
+				break;
+			case 'E':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2E.println(line);
+					break;
+				case 3:
+					pw3E.println(line);
+					break;
+				case 4:
+					pw4E.println(line);
+					break;
+				case 5:
+					pw5E.println(line);
+					break;
+				case 6:
+					pw6E.println(line);
+					break;
+				case 7:
+					pw7E.println(line);
+					break;
+				case 8:
+					pw8E.println(line);
+					break;
+				case 9:
+					pw9E.println(line);
+					break;
+				case 10:
+					pw10E.println(line);
+					break;
+				case 11:
+					pw11E.println(line);
+					break;
+				case 12:
+					pw12E.println(line);
+					break;
+				case 13:
+					pw13E.println(line);
+					break;
+				case 14:
+					pw14E.println(line);
+					break;
+				default:
+					pw15E.println(line);
+					break;
+				}
+				break;
+			case 'F':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2F.println(line);
+					break;
+				case 3:
+					pw3F.println(line);
+					break;
+				case 4:
+					pw4F.println(line);
+					break;
+				case 5:
+					pw5F.println(line);
+					break;
+				case 6:
+					pw6F.println(line);
+					break;
+				case 7:
+					pw7F.println(line);
+					break;
+				case 8:
+					pw8F.println(line);
+					break;
+				case 9:
+					pw9F.println(line);
+					break;
+				case 10:
+					pw10F.println(line);
+					break;
+				case 11:
+					pw11F.println(line);
+					break;
+				case 12:
+					pw12F.println(line);
+					break;
+				case 13:
+					pw13F.println(line);
+					break;
+				case 14:
+					pw14F.println(line);
+					break;
+				default:
+					pw15F.println(line);
+					break;
+				}
+				break;
+			case 'G':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2G.println(line);
+					break;
+				case 3:
+					pw3G.println(line);
+					break;
+				case 4:
+					pw4G.println(line);
+					break;
+				case 5:
+					pw5G.println(line);
+					break;
+				case 6:
+					pw6G.println(line);
+					break;
+				case 7:
+					pw7G.println(line);
+					break;
+				case 8:
+					pw8G.println(line);
+					break;
+				case 9:
+					pw9G.println(line);
+					break;
+				case 10:
+					pw10G.println(line);
+					break;
+				case 11:
+					pw11G.println(line);
+					break;
+				case 12:
+					pw12G.println(line);
+					break;
+				case 13:
+					pw13G.println(line);
+					break;
+				case 14:
+					pw14G.println(line);
+					break;
+				default:
+					pw15G.println(line);
+					break;
+				}
+				break;
+			case 'H':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2H.println(line);
+					break;
+				case 3:
+					pw3H.println(line);
+					break;
+				case 4:
+					pw4H.println(line);
+					break;
+				case 5:
+					pw5H.println(line);
+					break;
+				case 6:
+					pw6H.println(line);
+					break;
+				case 7:
+					pw7H.println(line);
+					break;
+				case 8:
+					pw8H.println(line);
+					break;
+				case 9:
+					pw9H.println(line);
+					break;
+				case 10:
+					pw10H.println(line);
+					break;
+				case 11:
+					pw11H.println(line);
+					break;
+				case 12:
+					pw12H.println(line);
+					break;
+				case 13:
+					pw13H.println(line);
+					break;
+				case 14:
+					pw14H.println(line);
+					break;
+				default:
+					pw15H.println(line);
+					break;
+				}
+				break;
+			case 'I':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2I.println(line);
+					break;
+				case 3:
+					pw3I.println(line);
+					break;
+				case 4:
+					pw4I.println(line);
+					break;
+				case 5:
+					pw5I.println(line);
+					break;
+				case 6:
+					pw6I.println(line);
+					break;
+				case 7:
+					pw7I.println(line);
+					break;
+				case 8:
+					pw8I.println(line);
+					break;
+				case 9:
+					pw9I.println(line);
+					break;
+				case 10:
+					pw10I.println(line);
+					break;
+				case 11:
+					pw11I.println(line);
+					break;
+				case 12:
+					pw12I.println(line);
+					break;
+				case 13:
+					pw13I.println(line);
+					break;
+				case 14:
+					pw14I.println(line);
+					break;
+				default:
+					pw15I.println(line);
+					break;
+				}
+				break;
+			case 'J':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2J.println(line);
+					break;
+				case 3:
+					pw3J.println(line);
+					break;
+				case 4:
+					pw4J.println(line);
+					break;
+				case 5:
+					pw5J.println(line);
+					break;
+				case 6:
+					pw6J.println(line);
+					break;
+				case 7:
+					pw7J.println(line);
+					break;
+				case 8:
+					pw8J.println(line);
+					break;
+				case 9:
+					pw9J.println(line);
+					break;
+				case 10:
+					pw10J.println(line);
+					break;
+				case 11:
+					pw11J.println(line);
+					break;
+				case 12:
+					pw12J.println(line);
+					break;
+				case 13:
+					pw13J.println(line);
+					break;
+				case 14:
+					pw14J.println(line);
+					break;
+				default:
+					pw15J.println(line);
+					break;
+				}
+				break;
+			case 'K':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2K.println(line);
+					break;
+				case 3:
+					pw3K.println(line);
+					break;
+				case 4:
+					pw4K.println(line);
+					break;
+				case 5:
+					pw5K.println(line);
+					break;
+				case 6:
+					pw6K.println(line);
+					break;
+				case 7:
+					pw7K.println(line);
+					break;
+				case 8:
+					pw8K.println(line);
+					break;
+				case 9:
+					pw9K.println(line);
+					break;
+				case 10:
+					pw10K.println(line);
+					break;
+				case 11:
+					pw11K.println(line);
+					break;
+				case 12:
+					pw12K.println(line);
+					break;
+				case 13:
+					pw13K.println(line);
+					break;
+				case 14:
+					pw14K.println(line);
+					break;
+				default:
+					pw15K.println(line);
+					break;
+				}
+				break;
+			case 'L':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2L.println(line);
+					break;
+				case 3:
+					pw3L.println(line);
+					break;
+				case 4:
+					pw4L.println(line);
+					break;
+				case 5:
+					pw5L.println(line);
+					break;
+				case 6:
+					pw6L.println(line);
+					break;
+				case 7:
+					pw7L.println(line);
+					break;
+				case 8:
+					pw8L.println(line);
+					break;
+				case 9:
+					pw9L.println(line);
+					break;
+				case 10:
+					pw10L.println(line);
+					break;
+				case 11:
+					pw11L.println(line);
+					break;
+				case 12:
+					pw12L.println(line);
+					break;
+				case 13:
+					pw13L.println(line);
+					break;
+				case 14:
+					pw14L.println(line);
+					break;
+				default:
+					pw15L.println(line);
+					break;
+				}
+				break;
+			case 'M':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2M.println(line);
+					break;
+				case 3:
+					pw3M.println(line);
+					break;
+				case 4:
+					pw4M.println(line);
+					break;
+				case 5:
+					pw5M.println(line);
+					break;
+				case 6:
+					pw6M.println(line);
+					break;
+				case 7:
+					pw7M.println(line);
+					break;
+				case 8:
+					pw8M.println(line);
+					break;
+				case 9:
+					pw9M.println(line);
+					break;
+				case 10:
+					pw10M.println(line);
+					break;
+				case 11:
+					pw11M.println(line);
+					break;
+				case 12:
+					pw12M.println(line);
+					break;
+				case 13:
+					pw13M.println(line);
+					break;
+				case 14:
+					pw14M.println(line);
+					break;
+				default:
+					pw15M.println(line);
+					break;
+				}
+				break;
+			case 'N':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2N.println(line);
+					break;
+				case 3:
+					pw3N.println(line);
+					break;
+				case 4:
+					pw4N.println(line);
+					break;
+				case 5:
+					pw5N.println(line);
+					break;
+				case 6:
+					pw6N.println(line);
+					break;
+				case 7:
+					pw7N.println(line);
+					break;
+				case 8:
+					pw8N.println(line);
+					break;
+				case 9:
+					pw9N.println(line);
+					break;
+				case 10:
+					pw10N.println(line);
+					break;
+				case 11:
+					pw11N.println(line);
+					break;
+				case 12:
+					pw12N.println(line);
+					break;
+				case 13:
+					pw13N.println(line);
+					break;
+				case 14:
+					pw14N.println(line);
+					break;
+				default:
+					pw15N.println(line);
+					break;
+				}
+				break;
+			case 'O':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2O.println(line);
+					break;
+				case 3:
+					pw3O.println(line);
+					break;
+				case 4:
+					pw4O.println(line);
+					break;
+				case 5:
+					pw5O.println(line);
+					break;
+				case 6:
+					pw6O.println(line);
+					break;
+				case 7:
+					pw7O.println(line);
+					break;
+				case 8:
+					pw8O.println(line);
+					break;
+				case 9:
+					pw9O.println(line);
+					break;
+				case 10:
+					pw10O.println(line);
+					break;
+				case 11:
+					pw11O.println(line);
+					break;
+				case 12:
+					pw12O.println(line);
+					break;
+				case 13:
+					pw13O.println(line);
+					break;
+				case 14:
+					pw14O.println(line);
+					break;
+				default:
+					pw15O.println(line);
+					break;
+				}
+				break;
+			case 'P':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2P.println(line);
+					break;
+				case 3:
+					pw3P.println(line);
+					break;
+				case 4:
+					pw4P.println(line);
+					break;
+				case 5:
+					pw5P.println(line);
+					break;
+				case 6:
+					pw6P.println(line);
+					break;
+				case 7:
+					pw7P.println(line);
+					break;
+				case 8:
+					pw8P.println(line);
+					break;
+				case 9:
+					pw9P.println(line);
+					break;
+				case 10:
+					pw10P.println(line);
+					break;
+				case 11:
+					pw11P.println(line);
+					break;
+				case 12:
+					pw12P.println(line);
+					break;
+				case 13:
+					pw13P.println(line);
+					break;
+				case 14:
+					pw14P.println(line);
+					break;
+				default:
+					pw15P.println(line);
+					break;
+				}
+				break;
+			case 'Q':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2Q.println(line);
+					break;
+				case 3:
+					pw3Q.println(line);
+					break;
+				case 4:
+					pw4Q.println(line);
+					break;
+				case 5:
+					pw5Q.println(line);
+					break;
+				case 6:
+					pw6Q.println(line);
+					break;
+				case 7:
+					pw7Q.println(line);
+					break;
+				case 8:
+					pw8Q.println(line);
+					break;
+				case 9:
+					pw9Q.println(line);
+					break;
+				case 10:
+					pw10Q.println(line);
+					break;
+				case 11:
+					pw11Q.println(line);
+					break;
+				case 12:
+					pw12Q.println(line);
+					break;
+				case 13:
+					pw13Q.println(line);
+					break;
+				case 14:
+					pw14Q.println(line);
+					break;
+				default:
+					pw15Q.println(line);
+					break;
+				}
+				break;
+			case 'R':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2R.println(line);
+					break;
+				case 3:
+					pw3R.println(line);
+					break;
+				case 4:
+					pw4R.println(line);
+					break;
+				case 5:
+					pw5R.println(line);
+					break;
+				case 6:
+					pw6R.println(line);
+					break;
+				case 7:
+					pw7R.println(line);
+					break;
+				case 8:
+					pw8R.println(line);
+					break;
+				case 9:
+					pw9R.println(line);
+					break;
+				case 10:
+					pw10R.println(line);
+					break;
+				case 11:
+					pw11R.println(line);
+					break;
+				case 12:
+					pw12R.println(line);
+					break;
+				case 13:
+					pw13R.println(line);
+					break;
+				case 14:
+					pw14R.println(line);
+					break;
+				default:
+					pw15R.println(line);
+					break;
+				}
+				break;
+			case 'S':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2S.println(line);
+					break;
+				case 3:
+					pw3S.println(line);
+					break;
+				case 4:
+					pw4S.println(line);
+					break;
+				case 5:
+					pw5S.println(line);
+					break;
+				case 6:
+					pw6S.println(line);
+					break;
+				case 7:
+					pw7S.println(line);
+					break;
+				case 8:
+					pw8S.println(line);
+					break;
+				case 9:
+					pw9S.println(line);
+					break;
+				case 10:
+					pw10S.println(line);
+					break;
+				case 11:
+					pw11S.println(line);
+					break;
+				case 12:
+					pw12S.println(line);
+					break;
+				case 13:
+					pw13S.println(line);
+					break;
+				case 14:
+					pw14S.println(line);
+					break;
+				default:
+					pw15S.println(line);
+					break;
+				}
+				break;
+			case 'T':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2T.println(line);
+					break;
+				case 3:
+					pw3T.println(line);
+					break;
+				case 4:
+					pw4T.println(line);
+					break;
+				case 5:
+					pw5T.println(line);
+					break;
+				case 6:
+					pw6T.println(line);
+					break;
+				case 7:
+					pw7T.println(line);
+					break;
+				case 8:
+					pw8T.println(line);
+					break;
+				case 9:
+					pw9T.println(line);
+					break;
+				case 10:
+					pw10T.println(line);
+					break;
+				case 11:
+					pw11T.println(line);
+					break;
+				case 12:
+					pw12T.println(line);
+					break;
+				case 13:
+					pw13T.println(line);
+					break;
+				case 14:
+					pw14T.println(line);
+					break;
+				default:
+					pw15T.println(line);
+					break;
+				}
+				break;
+			case 'U':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2U.println(line);
+					break;
+				case 3:
+					pw3U.println(line);
+					break;
+				case 4:
+					pw4U.println(line);
+					break;
+				case 5:
+					pw5U.println(line);
+					break;
+				case 6:
+					pw6U.println(line);
+					break;
+				case 7:
+					pw7U.println(line);
+					break;
+				case 8:
+					pw8U.println(line);
+					break;
+				case 9:
+					pw9U.println(line);
+					break;
+				case 10:
+					pw10U.println(line);
+					break;
+				case 11:
+					pw11U.println(line);
+					break;
+				case 12:
+					pw12U.println(line);
+					break;
+				case 13:
+					pw13U.println(line);
+					break;
+				case 14:
+					pw14U.println(line);
+					break;
+				default:
+					pw15U.println(line);
+					break;
+				}
+				break;
+			case 'V':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2V.println(line);
+					break;
+				case 3:
+					pw3V.println(line);
+					break;
+				case 4:
+					pw4V.println(line);
+					break;
+				case 5:
+					pw5V.println(line);
+					break;
+				case 6:
+					pw6V.println(line);
+					break;
+				case 7:
+					pw7V.println(line);
+					break;
+				case 8:
+					pw8V.println(line);
+					break;
+				case 9:
+					pw9V.println(line);
+					break;
+				case 10:
+					pw10V.println(line);
+					break;
+				case 11:
+					pw11V.println(line);
+					break;
+				case 12:
+					pw12V.println(line);
+					break;
+				case 13:
+					pw13V.println(line);
+					break;
+				case 14:
+					pw14V.println(line);
+					break;
+				default:
+					pw15V.println(line);
+					break;
+				}
+				break;
+			case 'W':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2W.println(line);
+					break;
+				case 3:
+					pw3W.println(line);
+					break;
+				case 4:
+					pw4W.println(line);
+					break;
+				case 5:
+					pw5W.println(line);
+					break;
+				case 6:
+					pw6W.println(line);
+					break;
+				case 7:
+					pw7W.println(line);
+					break;
+				case 8:
+					pw8W.println(line);
+					break;
+				case 9:
+					pw9W.println(line);
+					break;
+				case 10:
+					pw10W.println(line);
+					break;
+				case 11:
+					pw11W.println(line);
+					break;
+				case 12:
+					pw12W.println(line);
+					break;
+				case 13:
+					pw13W.println(line);
+					break;
+				case 14:
+					pw14W.println(line);
+					break;
+				default:
+					pw15W.println(line);
+					break;
+				}
+				break;
+			case 'X':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2X.println(line);
+					break;
+				case 3:
+					pw3X.println(line);
+					break;
+				case 4:
+					pw4X.println(line);
+					break;
+				case 5:
+					pw5X.println(line);
+					break;
+				case 6:
+					pw6X.println(line);
+					break;
+				case 7:
+					pw7X.println(line);
+					break;
+				case 8:
+					pw8X.println(line);
+					break;
+				case 9:
+					pw9X.println(line);
+					break;
+				case 10:
+					pw10X.println(line);
+					break;
+				case 11:
+					pw11X.println(line);
+					break;
+				case 12:
+					pw12X.println(line);
+					break;
+				case 13:
+					pw13X.println(line);
+					break;
+				case 14:
+					pw14X.println(line);
+					break;
+				default:
+					pw15X.println(line);
+					break;
+				}
+				break;
+			case 'Y':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2Y.println(line);
+					break;
+				case 3:
+					pw3Y.println(line);
+					break;
+				case 4:
+					pw4Y.println(line);
+					break;
+				case 5:
+					pw5Y.println(line);
+					break;
+				case 6:
+					pw6Y.println(line);
+					break;
+				case 7:
+					pw7Y.println(line);
+					break;
+				case 8:
+					pw8Y.println(line);
+					break;
+				case 9:
+					pw9Y.println(line);
+					break;
+				case 10:
+					pw10Y.println(line);
+					break;
+				case 11:
+					pw11Y.println(line);
+					break;
+				case 12:
+					pw12Y.println(line);
+					break;
+				case 13:
+					pw13Y.println(line);
+					break;
+				case 14:
+					pw14Y.println(line);
+					break;
+				default:
+					pw15Y.println(line);
+					break;
+				}
+				break;
+			case 'Z':
+				switch (dictionary_word.length()) {
+				case 2:
+					pw2Z.println(line);
+					break;
+				case 3:
+					pw3Z.println(line);
+					break;
+				case 4:
+					pw4Z.println(line);
+					break;
+				case 5:
+					pw5Z.println(line);
+					break;
+				case 6:
+					pw6Z.println(line);
+					break;
+				case 7:
+					pw7Z.println(line);
+					break;
+				case 8:
+					pw8Z.println(line);
+					break;
+				case 9:
+					pw9Z.println(line);
+					break;
+				case 10:
+					pw10Z.println(line);
+					break;
+				case 11:
+					pw11Z.println(line);
+					break;
+				case 12:
+					pw12Z.println(line);
+					break;
+				case 13:
+					pw13Z.println(line);
+					break;
+				case 14:
+					pw14Z.println(line);
+					break;
+				default:
+					pw15Z.println(line);
+					break;
+				}
+				break;
+			}
+		}
+		
+		scan.close();
+		pw2A.close();
+		pw3A.close();
+		pw4A.close();
+		pw5A.close();
+		pw6A.close();
+		pw7A.close();
+		pw8A.close();
+		pw9A.close();
+		pw10A.close();
+		pw11A.close();
+		pw12A.close();
+		pw13A.close();
+		pw14A.close();
+		pw15A.close();
+
+		pw2B.close();
+		pw3B.close();
+		pw4B.close();
+		pw5B.close();
+		pw6B.close();
+		pw7B.close();
+		pw8B.close();
+		pw9B.close();
+		pw10B.close();
+		pw11B.close();
+		pw12B.close();
+		pw13B.close();
+		pw14B.close();
+		pw15B.close();
+
+		pw2C.close();
+		pw3C.close();
+		pw4C.close();
+		pw5C.close();
+		pw6C.close();
+		pw7C.close();
+		pw8C.close();
+		pw9C.close();
+		pw10C.close();
+		pw11C.close();
+		pw12C.close();
+		pw13C.close();
+		pw14C.close();
+		pw15C.close();
+
+		pw2D.close();
+		pw3D.close();
+		pw4D.close();
+		pw5D.close();
+		pw6D.close();
+		pw7D.close();
+		pw8D.close();
+		pw9D.close();
+		pw10D.close();
+		pw11D.close();
+		pw12D.close();
+		pw13D.close();
+		pw14D.close();
+		pw15D.close();
+
+		pw2E.close();
+		pw3E.close();
+		pw4E.close();
+		pw5E.close();
+		pw6E.close();
+		pw7E.close();
+		pw8E.close();
+		pw9E.close();
+		pw10E.close();
+		pw11E.close();
+		pw12E.close();
+		pw13E.close();
+		pw14E.close();
+		pw15E.close();
+
+		pw2F.close();
+		pw3F.close();
+		pw4F.close();
+		pw5F.close();
+		pw6F.close();
+		pw7F.close();
+		pw8F.close();
+		pw9F.close();
+		pw10F.close();
+		pw11F.close();
+		pw12F.close();
+		pw13F.close();
+		pw14F.close();
+		pw15F.close();
+
+		pw2G.close();
+		pw3G.close();
+		pw4G.close();
+		pw5G.close();
+		pw6G.close();
+		pw7G.close();
+		pw8G.close();
+		pw9G.close();
+		pw10G.close();
+		pw11G.close();
+		pw12G.close();
+		pw13G.close();
+		pw14G.close();
+		pw15G.close();
+
+		pw2H.close();
+		pw3H.close();
+		pw4H.close();
+		pw5H.close();
+		pw6H.close();
+		pw7H.close();
+		pw8H.close();
+		pw9H.close();
+		pw10H.close();
+		pw11H.close();
+		pw12H.close();
+		pw13H.close();
+		pw14H.close();
+		pw15H.close();
+
+		pw2I.close();
+		pw3I.close();
+		pw4I.close();
+		pw5I.close();
+		pw6I.close();
+		pw7I.close();
+		pw8I.close();
+		pw9I.close();
+		pw10I.close();
+		pw11I.close();
+		pw12I.close();
+		pw13I.close();
+		pw14I.close();
+		pw15I.close();
+
+		pw2J.close();
+		pw3J.close();
+		pw4J.close();
+		pw5J.close();
+		pw6J.close();
+		pw7J.close();
+		pw8J.close();
+		pw9J.close();
+		pw10J.close();
+		pw11J.close();
+		pw12J.close();
+		pw13J.close();
+		pw14J.close();
+		pw15J.close();
+
+		pw2K.close();
+		pw3K.close();
+		pw4K.close();
+		pw5K.close();
+		pw6K.close();
+		pw7K.close();
+		pw8K.close();
+		pw9K.close();
+		pw10K.close();
+		pw11K.close();
+		pw12K.close();
+		pw13K.close();
+		pw14K.close();
+		pw15K.close();
+
+		pw2L.close();
+		pw3L.close();
+		pw4L.close();
+		pw5L.close();
+		pw6L.close();
+		pw7L.close();
+		pw8L.close();
+		pw9L.close();
+		pw10L.close();
+		pw11L.close();
+		pw12L.close();
+		pw13L.close();
+		pw14L.close();
+		pw15L.close();
+
+		pw2M.close();
+		pw3M.close();
+		pw4M.close();
+		pw5M.close();
+		pw6M.close();
+		pw7M.close();
+		pw8M.close();
+		pw9M.close();
+		pw10M.close();
+		pw11M.close();
+		pw12M.close();
+		pw13M.close();
+		pw14M.close();
+		pw15M.close();
+
+		pw2N.close();
+		pw3N.close();
+		pw4N.close();
+		pw5N.close();
+		pw6N.close();
+		pw7N.close();
+		pw8N.close();
+		pw9N.close();
+		pw10N.close();
+		pw11N.close();
+		pw12N.close();
+		pw13N.close();
+		pw14N.close();
+		pw15N.close();
+
+		pw2O.close();
+		pw3O.close();
+		pw4O.close();
+		pw5O.close();
+		pw6O.close();
+		pw7O.close();
+		pw8O.close();
+		pw9O.close();
+		pw10O.close();
+		pw11O.close();
+		pw12O.close();
+		pw13O.close();
+		pw14O.close();
+		pw15O.close();
+
+		pw2P.close();
+		pw3P.close();
+		pw4P.close();
+		pw5P.close();
+		pw6P.close();
+		pw7P.close();
+		pw8P.close();
+		pw9P.close();
+		pw10P.close();
+		pw11P.close();
+		pw12P.close();
+		pw13P.close();
+		pw14P.close();
+		pw15P.close();
+
+		pw2Q.close();
+		pw3Q.close();
+		pw4Q.close();
+		pw5Q.close();
+		pw6Q.close();
+		pw7Q.close();
+		pw8Q.close();
+		pw9Q.close();
+		pw10Q.close();
+		pw11Q.close();
+		pw12Q.close();
+		pw13Q.close();
+		pw14Q.close();
+		pw15Q.close();
+
+		pw2R.close();
+		pw3R.close();
+		pw4R.close();
+		pw5R.close();
+		pw6R.close();
+		pw7R.close();
+		pw8R.close();
+		pw9R.close();
+		pw10R.close();
+		pw11R.close();
+		pw12R.close();
+		pw13R.close();
+		pw14R.close();
+		pw15R.close();
+
+		pw2S.close();
+		pw3S.close();
+		pw4S.close();
+		pw5S.close();
+		pw6S.close();
+		pw7S.close();
+		pw8S.close();
+		pw9S.close();
+		pw10S.close();
+		pw11S.close();
+		pw12S.close();
+		pw13S.close();
+		pw14S.close();
+		pw15S.close();
+
+		pw2T.close();
+		pw3T.close();
+		pw4T.close();
+		pw5T.close();
+		pw6T.close();
+		pw7T.close();
+		pw8T.close();
+		pw9T.close();
+		pw10T.close();
+		pw11T.close();
+		pw12T.close();
+		pw13T.close();
+		pw14T.close();
+		pw15T.close();
+
+		pw2U.close();
+		pw3U.close();
+		pw4U.close();
+		pw5U.close();
+		pw6U.close();
+		pw7U.close();
+		pw8U.close();
+		pw9U.close();
+		pw10U.close();
+		pw11U.close();
+		pw12U.close();
+		pw13U.close();
+		pw14U.close();
+		pw15U.close();
+
+		pw2V.close();
+		pw3V.close();
+		pw4V.close();
+		pw5V.close();
+		pw6V.close();
+		pw7V.close();
+		pw8V.close();
+		pw9V.close();
+		pw10V.close();
+		pw11V.close();
+		pw12V.close();
+		pw13V.close();
+		pw14V.close();
+		pw15V.close();
+
+		pw2W.close();
+		pw3W.close();
+		pw4W.close();
+		pw5W.close();
+		pw6W.close();
+		pw7W.close();
+		pw8W.close();
+		pw9W.close();
+		pw10W.close();
+		pw11W.close();
+		pw12W.close();
+		pw13W.close();
+		pw14W.close();
+		pw15W.close();
+
+		pw2X.close();
+		pw3X.close();
+		pw4X.close();
+		pw5X.close();
+		pw6X.close();
+		pw7X.close();
+		pw8X.close();
+		pw9X.close();
+		pw10X.close();
+		pw11X.close();
+		pw12X.close();
+		pw13X.close();
+		pw14X.close();
+		pw15X.close();
+
+		pw2Y.close();
+		pw3Y.close();
+		pw4Y.close();
+		pw5Y.close();
+		pw6Y.close();
+		pw7Y.close();
+		pw8Y.close();
+		pw9Y.close();
+		pw10Y.close();
+		pw11Y.close();
+		pw12Y.close();
+		pw13Y.close();
+		pw14Y.close();
+		pw15Y.close();
+
+		pw2Z.close();
+		pw3Z.close();
+		pw4Z.close();
+		pw5Z.close();
+		pw6Z.close();
+		pw7Z.close();
+		pw8Z.close();
+		pw9Z.close();
+		pw10Z.close();
+		pw11Z.close();
+		pw12Z.close();
+		pw13Z.close();
+		pw14Z.close();
+		pw15Z.close();
+	}
+	
 	public static void generateWordsStartingWithFiles() throws IOException {
 		Scanner scan = new Scanner(new File("docs/masterWordList"));
 		PrintWriter pwA = new PrintWriter(new File("docs/wordsStartingWith/StartingWithA"));
@@ -4207,6 +6563,7 @@ public class DocGenerator {
 			File inputFile =  new File("docs" + separator + "Collins_Scrabble_Words_(2019)_with_definitions.txt");
 			File outputFile = new File("docs/masterWordList");
 			generateMasterWordListCsvFile(inputFile, outputFile);
+			generateDefineWordLengthStartingWithFiles();
 			generateWordsStartingWithFiles();
 			generateWordLengthStartingWithFiles();
 			generateSubpartStartingWithFiles();
