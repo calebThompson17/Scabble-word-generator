@@ -90,7 +90,7 @@ public class ScrabbleWord {
 				word_definition = line.substring(i + 1);
 				break;
 			}
-			if (word.compareTo(dictionary_word) > 0) {
+			if (dictionary_word.compareTo(word) > 0) {
 				break;
 			}
 		}

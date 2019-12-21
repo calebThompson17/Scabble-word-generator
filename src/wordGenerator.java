@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.Math;
 import java.util.Scanner;
@@ -1274,28 +1275,105 @@ public class wordGenerator {
 		return returnChars;
 	}
 	
+	private static boolean isSubpart(String word) throws FileNotFoundException {
+		String separator = System.getProperty("file.separator");
+		String wordLength;
+		switch (word.length()) {
+		case 2:
+			wordLength = "two";
+			break;
+		case 3:
+			wordLength = "three";
+			break;
+		case 4:
+			wordLength = "four";
+			break;
+		case 5:
+			wordLength = "five";
+			break;
+		case 6:
+			wordLength = "six";
+			break;
+		case 7:
+			wordLength = "seven";
+			break;
+		case 8:
+			wordLength = "eight";
+			break;
+		case 9:
+			wordLength = "nine";
+			break;
+		case 10:
+			wordLength = "ten";
+			break;
+		case 11:
+			wordLength = "eleven";
+			break;
+		case 12:
+			wordLength = "twelve";
+			break;
+		case 13:
+			wordLength = "thirteen";
+			break;
+		case 14:
+			wordLength = "fourteen";
+			break;
+		case 15:
+			wordLength = "fifteen";
+			break;
+		default:
+			wordLength = "no length";
+		}
+		String filename = "docs" + separator + "subpartStartingWith" + 
+		        separator + wordLength + "LetterSubparts" + separator + 
+				wordLength + "LetterSubpartsStartingWith" + word.charAt(0);
+		Scanner scan = new Scanner(new File(filename));
+		while (scan.hasNextLine()) {
+			String line = scan.nextLine();
+//			System.out.print(line);
+			if (line.equals(word)) {
+				scan.close();
+				return true;
+			}
+			if (line.compareTo(word) > 0) {
+				scan.close();
+				return false;
+			}
+		}
+		scan.close();
+		return false;
+	}
+	
 	private static void charArrayToSetLengthScrabbleWordList(ArrayList <ScrabbleWord> wordList, ArrayList <Character> charList, ArrayList <Character> charWord) throws IOException {
 		int arrayLengthRemaining = charList.size();
 		for (int i = 0; i < arrayLengthRemaining; ++i) {
 			charWord.add(charList.remove(i));
-			if (arrayLengthRemaining == 2) {
-				charWord.add(charList.remove(0));
-				String newWord = "";
-				for (int j = 0; j < charWord.size(); ++j) {
-					newWord += "" + charWord.get(j);
-				}
-				System.out.println("Potential word: " + newWord);
-				if (isScrabbleWord(newWord)) {
-					ScrabbleWord wordScrabble = new ScrabbleWord(newWord);
-					if (!wordList.contains(wordScrabble)) {
-						wordList.add(wordScrabble);
-						System.out.println("\tReal Scrabble Word:" + wordScrabble);
-					}
-				}
-				charList.add(0, charWord.remove(charWord.size() - 1));
+			String word = "";
+			for (int j = 0; j < charWord.size(); ++j) {
+				word += "" + charWord.get(j);
 			}
-			else {
-				charArrayToSetLengthScrabbleWordList(wordList, charList, charWord);
+			boolean isSubpart = true;
+			if (word.length() > 1) {
+				isSubpart = isSubpart(word);
+				System.out.println("Checking if " + word + " is a subpart: " + isSubpart);
+			}
+			if (isSubpart) {
+				if (arrayLengthRemaining == 2) {
+					charWord.add(charList.remove(0));
+					word += charWord.get(charWord.size() - 1);
+					System.out.println("Potential word: " + word);
+					if (isScrabbleWord(word)) {
+						ScrabbleWord wordScrabble = new ScrabbleWord(word);
+						if (!wordList.contains(wordScrabble)) {
+							wordList.add(wordScrabble);
+							System.out.println("\tReal Scrabble Word:" + wordScrabble);
+						}
+					}
+					charList.add(0, charWord.remove(charWord.size() - 1));
+				}
+				else {
+					charArrayToSetLengthScrabbleWordList(wordList, charList, charWord);
+				}
 			}
 			charList.add(i, charWord.remove(charWord.size() - 1));
 		}
@@ -1318,7 +1396,7 @@ public class wordGenerator {
 	public static void main(String[] args) {
 		try {
 //			String word = new String(randomLetterGenerator(3));
-			String word = "ABC";
+			String word = "DAD";
 			System.out.println(word + " is a word: " + isScrabbleWord(word));
 			ScrabbleWord sWord = new ScrabbleWord(word);
 			System.out.println(sWord.getword() + " score: " + sWord.getScore());
