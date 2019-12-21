@@ -1274,99 +1274,6 @@ public class wordGenerator {
 		return returnChars;
 	}
 	
-	public static Stack<String> stringStackToMasterScrabbleWordList(Stack<String> stringStack){
-		return null;
-	}
-	
-	public static ScrabbleWord[] charArrayToMasterScrabbleWordList(char[] charArray) {
-		ScrabbleWord[] wordArray;
-		if (charArray.length < 2) {
-			wordArray = new ScrabbleWord[0];
-			return wordArray;
-		}
-		else if (charArray.length == 2) {
-			wordArray = charArrayLen2ToScrabbleWordList(charArray);
-			return wordArray;
-		}
-		return null;
-	}
-	
-	public static ScrabbleWord[] charArrayLen2ToScrabbleWordList(char[] charArray) {
-		for (int i = 0; i < 2; ++i) {
-			
-		}
-//		if (is)
-		return null;
-	}
-	
-	public static void swap(char[] charArray, int i, int j) {
-		char temporary = charArray[i];
-		charArray[i] = charArray[j];
-		charArray[j] = temporary;
-	}
-	
-	public static ArrayList <ScrabbleWord> charArrayToSetScrabbleWordListDraft(char[] charArrayp) throws IOException {
-		ArrayList <ScrabbleWord> wordList = new ArrayList<>();
-		if (charArrayp.length <= 1) {
-			return wordList;
-		}
-		char[] charArray = charArrayp;
-		Arrays.sort(charArray);
-		String wordString;
-		for (int i1 = 0; i1 < charArray.length; ++i1) {
-			wordString = new String(charArray);
-			if (isScrabbleWord(wordString)) {
-				ScrabbleWord wordScrabble = new ScrabbleWord(wordString);
-				if (!wordList.contains(wordScrabble)) {
-					wordList.add(wordScrabble);
-				}
-			}
-			if ((charArray.length) > 2) {
-				for (int i2 = 0; i2 < charArray.length; ++i2) {
-					swap(charArrayp, 1, 2);
-					// actually, use recursion with a base case of (charArray.length - index) == 2
-				}
-				
-			}
-
-			swap(charArrayp, 0, 1);
-		}
-		return null;
-	}
-	
-	private static long factorial(long num) {
-		if (num == 0) {
-			return 1;
-		}
-		else {
-			return num * factorial(num - 1);
-		}
-	}
-
-	private static void charArrayToSetLengthScrabbleWordListError(ArrayList <ScrabbleWord> wordList, char[] charArray, int index) throws IOException {
-		int arrayLengthRemaining = charArray.length - index;
-		long loopChangesIteration = factorial(arrayLengthRemaining);
-		for (long j = 0; j < arrayLengthRemaining; ++j) {
-			if ((arrayLengthRemaining) > 2) {
-				charArrayToSetLengthScrabbleWordList(wordList, charArray, index + 1);
-			}
-			else {
-				String wordString = new String(charArray);
-				System.out.println("Potential word: " + wordString);
-				if (isScrabbleWord(wordString)) {
-					ScrabbleWord wordScrabble = new ScrabbleWord(wordString);
-					if (!wordList.contains(wordScrabble)) {
-						wordList.add(wordScrabble);
-						System.out.println("\tReal Scrabble Word:" + wordScrabble);
-					}
-				}
-			}
-			swap(charArray, index, index + 1);
-		}
-		return;
-	}
-	
-
 	private static void charArrayToSetLengthScrabbleWordList(ArrayList <ScrabbleWord> wordList, ArrayList <Character> charList, ArrayList <Character> charWord) throws IOException {
 		int arrayLengthRemaining = charList.size();
 		for (int i = 0; i < arrayLengthRemaining; ++i) {
@@ -1399,24 +1306,11 @@ public class wordGenerator {
 		if (charArrayp.length < 2) {
 			return;
 		}
-//		String wordString = new String(charArrayp);
-//		if (isScrabbleWord(wordString)) {
-//			ScrabbleWord wordScrabble = new ScrabbleWord(wordString);
-//			if (!wordList.contains(wordScrabble)) {
-//				wordList.add(wordScrabble);
-//			}
-//		}
 		ArrayList <Character> charList = new ArrayList<>();
 		for (int i = 0; i < charArrayp.length; ++i) {
 			charList.add(charArrayp[i]);
 		}
-//		char[] charWord = new char[charArrayp.length];
 		ArrayList <Character> charWord = new ArrayList<>();
-//		char[] charArray = Arrays.copyOf(charArrayp, charArrayp.length);
-//		Arrays.sort(charArray);
-//		long loopContinuesIteration = factorial(charArray.length);
-//		for (long i = 0; i < loopContinuesIteration; ++i) {
-//		}
 		charArrayToSetLengthScrabbleWordList(wordList, charList, charWord);
 		return;
 	}
