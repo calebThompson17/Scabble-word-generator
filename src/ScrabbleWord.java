@@ -15,7 +15,7 @@ public class ScrabbleWord {
 		score = calculateScore(word);
 	}
 	
-	public String getword() {
+	public String getWord() {
 		return word;
 	}
 	

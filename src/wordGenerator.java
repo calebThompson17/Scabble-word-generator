@@ -1269,7 +1269,7 @@ public class wordGenerator {
 		for (int i = 0; i < num; ++i) {
 			int randomNum = (int)(Math.random()*(26)+1);
 			char letter = (char)(randomNum + 64);
-			System.out.println("randomNum: " + randomNum + "\t  letter: " + letter);
+//			System.out.println("randomNum: " + randomNum + "\t  letter: " + letter);
 			returnChars[i] = letter;
 		}
 		return returnChars;
@@ -1353,12 +1353,12 @@ public class wordGenerator {
 			}
 			boolean isSubpart = true;
 			if (word.length() > 1) {
-				System.out.println("Potential word: " + word);
+//				System.out.println("Potential word: " + word);
 				if (isScrabbleWord(word)) {
 					ScrabbleWord wordScrabble = new ScrabbleWord(word);
 					boolean wordListContainsNewWord = false;
 					for (int j = 0; j < wordList.size(); ++j) {
-						if (wordScrabble.getword().equals(wordList.get(j).getword())) {
+						if (wordScrabble.getWord().equals(wordList.get(j).getWord())) {
 							wordListContainsNewWord = true;
 							break;
 						}
@@ -1366,22 +1366,22 @@ public class wordGenerator {
 //					if (!wordList.contains(wordScrabble)) {
 					if (!wordListContainsNewWord) {
 						wordList.add(wordScrabble);
-						System.out.println("\tReal Scrabble Word:" + wordScrabble);
+//						System.out.println("\tReal Scrabble Word:" + wordScrabble);
 					}
 				}
 				isSubpart = isSubpart(word);
-				System.out.println("Checking if " + word + " is a subpart: " + isSubpart);
+//				System.out.println("Checking if " + word + " is a subpart: " + isSubpart);
 			}
 			if (isSubpart) {
 				if (arrayLengthRemaining == 2) {
 					charWord.add(charList.remove(0));
 					word += charWord.get(charWord.size() - 1);
-					System.out.println("Potential word: " + word);
+//					System.out.println("Potential word: " + word);
 					if (isScrabbleWord(word)) {
 						ScrabbleWord wordScrabble = new ScrabbleWord(word);
 						boolean wordListContainsNewWord = false;
 						for (int j = 0; j < wordList.size(); ++j) {
-							if (wordScrabble.getword().equals(wordList.get(j).getword())) {
+							if (wordScrabble.getWord().equals(wordList.get(j).getWord())) {
 								wordListContainsNewWord = true;
 								break;
 							}
@@ -1389,7 +1389,7 @@ public class wordGenerator {
 //						if (!wordList.contains(wordScrabble)) {
 						if (!wordListContainsNewWord) {
 							wordList.add(wordScrabble);
-							System.out.println("\tReal Scrabble Word:" + wordScrabble);
+//							System.out.println("\tReal Scrabble Word:" + wordScrabble);
 						}
 					}
 					charList.add(0, charWord.remove(charWord.size() - 1));
@@ -1416,18 +1416,52 @@ public class wordGenerator {
 		return;
 	}
 	
+	public static void sortByScrabbleScore(ArrayList <ScrabbleWord> wordList) {
+		boolean hasChanged = true;
+		while (hasChanged) {
+			hasChanged = false;
+			for (int i = 0; i < wordList.size() - 1; ++i) {
+				if (wordList.get(i + 1).getScore() > wordList.get(i).getScore()) {
+					wordList.add(i, wordList.remove(i + 1));
+					hasChanged = true;
+				}
+				else if (wordList.get(i + 1).getScore() == wordList.get(i).getScore()) {
+					if (wordList.get(i + 1).getWord().compareTo(wordList.get(i).getWord()) < 0) {
+						wordList.add(i, wordList.remove(i + 1));
+						hasChanged = true;
+					}
+				}
+			}
+		}
+		return;
+	}
+	
+	public static void printScrabbleWordList(ArrayList <ScrabbleWord> wordList) {
+		System.out.println("#:\tWord:\tScore:");
+		for (int i = 0; i < wordList.size(); ++i) {
+			ScrabbleWord word = wordList.get(i);
+			System.out.println(i + 1 + ":\t" + word.getWord() + "\t" + word.getScore());
+		}
+		return;
+	}
+	
 	public static void main(String[] args) {
 		try {
-			String word = new String(randomLetterGenerator(3));
+			String word = new String(randomLetterGenerator(7));
 //			String word = "SH";
 			System.out.println(word + " is a word: " + isScrabbleWord(word));
 			ScrabbleWord sWord = new ScrabbleWord(word);
-			System.out.println(sWord.getword() + " score: " + sWord.getScore());
-			System.out.println(sWord.getword() + ": " + sWord.getDefinition());
+			System.out.println(sWord.getWord() + " score: " + sWord.getScore());
+			System.out.println(sWord.getWord() + ": " + sWord.getDefinition());
 			
 			ArrayList <ScrabbleWord> wordList = new ArrayList<>();
 			charArrayToSetLengthScrabbleWordList(wordList, word.toCharArray());
 			System.out.println("\n" + wordList);
+			printScrabbleWordList(wordList);
+			sortByScrabbleScore(wordList);
+			printScrabbleWordList(wordList);
+			
+			System.out.println("\nFinished executing wordGenerator");
 		}
 		catch (IOException excpt) {
 			System.out.println("Caught IOException: " + excpt.getMessage());
