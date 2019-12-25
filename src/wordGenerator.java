@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.lang.Math;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * This wordGenerator reads through the txt files produced in DocGenerator.java
@@ -14,6 +15,42 @@ import java.util.ArrayList;
  * @version Version 1
  */
 public class wordGenerator {
+	// class attributes
+	private char[] rack;
+	
+	/**
+	 * constructor for wordGenerator class
+	 */
+	public wordGenerator() {
+		this.rack = new char[] {(Character) null, (Character) null, (Character) null,
+				(Character) null, (Character) null, (Character) null, (Character) null};
+	}
+	
+	/**
+	 * The setLetterOnRack method puts a letter on the rack[] attribute
+	 *  at the first space that is occupied by a null character
+	 * @param character char
+	 */
+	public void setLetterOnRack (char character) {
+		int index = 0;
+		for (int i = 0; i < rack.length; ++i) {
+			if (rack[i] == (Character) null) {
+				index = i;
+				break;
+			}
+		}
+		rack[index] = character;
+	}
+	
+	/**
+	 * The getLetterFromRack method returns the letter
+	 *  at the specified index on the rack[] attribute
+	 * @param i int, index of the rack[]
+	 * @return char
+	 */
+	public char getLetterFromRack (int i) {
+		return rack[i];
+	}
 	
 	/**
 	 * The isScrabbleWord method scans the files
