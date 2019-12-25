@@ -22,8 +22,7 @@ public class wordGenerator {
 	 * constructor for wordGenerator class
 	 */
 	public wordGenerator() {
-		this.rack = new char[] {(Character) null, (Character) null, (Character) null,
-				(Character) null, (Character) null, (Character) null, (Character) null};
+		this.rack = new char[] {'0', '0', '0', '0', '0', '0', '0'};
 	}
 	
 	/**
@@ -31,10 +30,10 @@ public class wordGenerator {
 	 *  at the first space that is occupied by a null character
 	 * @param character char
 	 */
-	public void setLetterOnRack (char character) {
+	public void setLetterOnRack(char character) {
 		int index = 0;
 		for (int i = 0; i < rack.length; ++i) {
-			if (rack[i] == (Character) null) {
+			if (rack[i] == '0') {
 				index = i;
 				break;
 			}
@@ -43,12 +42,37 @@ public class wordGenerator {
 	}
 	
 	/**
+	 * The setLettersOnRack method adds the chars in the charArray
+	 *  to the rack attribute if there is available room on the rack
+	 * @param charArray char[], array of Scrabble letters
+	 */
+	public void setLettersOnRack(char[] charArray) {
+		for (int i = 0; i < charArray.length; ++i) {
+			int index = 0;
+			boolean foundOpenSpace = false;
+			for (int j = 0; j < rack.length; ++j) {
+				if (rack[j] == '0') {
+					index = j;
+					foundOpenSpace = true;
+					break;
+				}
+			}
+			if (foundOpenSpace) {
+				rack[index] = charArray[i];
+			}
+			else {
+				break;
+			}
+		}
+	}
+	
+	/**
 	 * The getLetterFromRack method returns the letter
 	 *  at the specified index on the rack[] attribute
 	 * @param i int, index of the rack[]
 	 * @return char
 	 */
-	public char getLetterFromRack (int i) {
+	public char getLetterFromRack(int i) {
 		return rack[i];
 	}
 	
@@ -1533,22 +1557,35 @@ public class wordGenerator {
 		return;
 	}
 	
+	public static void testingStaticMethods() throws IOException {
+		String word = new String(randomLetterGenerator(7));
+//		String word = "SH";
+		System.out.println(word + " is a word: " + isScrabbleWord(word));
+		ScrabbleWord sWord = new ScrabbleWord(word);
+		System.out.println(sWord.getWord() + " score: " + sWord.getScore());
+		System.out.println(sWord.getWord() + ": " + sWord.getDefinition());
+		
+		System.out.println();
+		ArrayList <ScrabbleWord> wordList = new ArrayList<>();
+		charArrayToSetLengthScrabbleWordList(wordList, word.toCharArray());
+//		System.out.println(wordList);
+//		printScrabbleWordList(wordList);
+		sortByScrabbleScore(wordList);
+		printScrabbleWordList(wordList);
+	}
+	
 	public static void main(String[] args) {
 		try {
-			String word = new String(randomLetterGenerator(7));
-//			String word = "SH";
+			String word = "SH";
 			System.out.println(word + " is a word: " + isScrabbleWord(word));
-			ScrabbleWord sWord = new ScrabbleWord(word);
-			System.out.println(sWord.getWord() + " score: " + sWord.getScore());
-			System.out.println(sWord.getWord() + ": " + sWord.getDefinition());
+//			testingStaticMethods();
 			
-			System.out.println();
-			ArrayList <ScrabbleWord> wordList = new ArrayList<>();
-			charArrayToSetLengthScrabbleWordList(wordList, word.toCharArray());
-//			System.out.println(wordList);
-//			printScrabbleWordList(wordList);
-			sortByScrabbleScore(wordList);
-			printScrabbleWordList(wordList);
+			wordGenerator wd = new wordGenerator();
+			char[] charArray = randomLetterGenerator(7);
+//			char[] charArray = {' ', ' ', ' ', ' ', ' ', ' ', ' '};
+			System.out.println(charArray + " is the rack");
+			wd.setLettersOnRack( new char[] {' ', ' '});
+			
 			
 			System.out.println("\nFinished executing wordGenerator");
 		}
