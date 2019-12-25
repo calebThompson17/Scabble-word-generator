@@ -1,5 +1,4 @@
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -9,10 +8,19 @@ import java.util.Scanner;
  * This class generates txt files to use for the Scrabble Word Generator
  * 
  * @author Caleb Thompson
- * @version version 1
+ * @version Version 1
  */
 public class DocGenerator {
-	public static void generateMasterWordListCsvFile(File input, File output) throws IOException {
+	/**
+	 * The generateMasterWordListCsvFile method
+	 *  generates the "docs/masterWordList" file
+	 *  from the "docs/Collins_Scrabble_Words_(2019)_with_definitions.txt" file
+	 * @throws IOException
+	 */
+	public static void generateMasterWordListCsvFile() throws IOException {
+		String separator = System.getProperty("file.separator");
+		File input =  new File("docs" + separator + "Collins_Scrabble_Words_(2019)_with_definitions.txt");
+		File output = new File("docs/masterWordList");
 		Scanner scan = new Scanner(input);
 		PrintWriter pw = new PrintWriter(output);
 		String title = scan.nextLine();
@@ -34,6 +42,12 @@ public class DocGenerator {
 		pw.close();
 	}
 	
+	/**
+	 * The generateDefineWordLengthStartingWithFiles method
+	 *  generates the files within the "docs/defineWordLengthStartingWith" directory
+	 *  from the "docs/Collins_Scrabble_Words_(2019)_with_definitions.txt" file
+	 * @throws IOException
+	 */
 	public static void generateDefineWordLengthStartingWithFiles() throws IOException {
 		String separator = System.getProperty("file.separator");
 		Scanner scan = new Scanner(new File("docs" + separator + "Collins_Scrabble_Words_(2019)_with_definitions.txt"));
@@ -2390,6 +2404,12 @@ public class DocGenerator {
 		pw15Z.close();
 	}
 	
+	/**
+	 * The generateWordsStartingWithFiles method
+	 *  generates the files within the "docs/wordsStartingWith" directory
+	 *  from the "docs/masterWordList" file
+	 * @throws IOException
+	 */
 	public static void generateWordsStartingWithFiles() throws IOException {
 		Scanner scan = new Scanner(new File("docs/masterWordList"));
 		PrintWriter pwA = new PrintWriter(new File("docs/wordsStartingWith/StartingWithA"));
@@ -2530,6 +2550,12 @@ public class DocGenerator {
 		pwZ.close();
 	}
 	
+	/**
+	 * The generateWordLengthStartingWithFiles method
+	 *  generates the files within the "docs/wordLengthStartingWith" directory
+	 *  from the "docs/masterWordList" file
+	 * @throws IOException
+	 */
 	public static void generateWordLengthStartingWithFiles() throws IOException {
 		Scanner scan = new Scanner(new File("docs/masterWordList"));
 		PrintWriter pw2A = new PrintWriter(new File("docs/wordLengthStartingWith/twoLetterWords/twoLetterWordsStartingWithA"));
@@ -4542,6 +4568,12 @@ public class DocGenerator {
 		pw15Z.close();
 	}
 	
+	/**
+	 * The generateSubpartStartingWithFiles method
+	 *  generates the files within the "docs/subPartStartingWith" directory
+	 *  from the "docs/masterWordList" file
+	 * @throws IOException
+	 */
 	public static void generateSubpartStartingWithFiles() throws IOException {
 		Scanner scan = new Scanner(new File("docs/masterWordList"));
 		PrintWriter pw2A = new PrintWriter(new File("docs/subPartStartingWith/twoLetterSubparts/twoLetterSubpartsStartingWithA"));
@@ -6559,10 +6591,7 @@ public class DocGenerator {
 	
 	public static void main(String[] args) {
 		try {
-			String separator = System.getProperty("file.separator");
-			File inputFile =  new File("docs" + separator + "Collins_Scrabble_Words_(2019)_with_definitions.txt");
-			File outputFile = new File("docs/masterWordList");
-			generateMasterWordListCsvFile(inputFile, outputFile);
+			generateMasterWordListCsvFile();
 			generateDefineWordLengthStartingWithFiles();
 			generateWordsStartingWithFiles();
 			generateWordLengthStartingWithFiles();

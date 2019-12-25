@@ -3,30 +3,58 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * The ScrabbleWord method models a word in the game of Scrabble
+ * @author Caleb Thompson
+ * @version Version 1
+ */
 public class ScrabbleWord {
 	// class variables
 	private String word;
 	private int score;
 	private String definition;
 	
+	/**
+	 * Constructor for the ScrabbleWord class.
+	 * @param word String, the word for which the ScrabbleWord will be modeled
+	 * @throws IOException
+	 */
 	ScrabbleWord(String word) throws IOException{
 		this.word = word;
 		definition = findDefinition(word);
 		score = calculateScore(word);
 	}
 	
+	/**
+	 * getter returning the word attribute
+	 * @return String, word
+	 */
 	public String getWord() {
 		return word;
 	}
 	
+	/**
+	 * getter returning the score attribute
+	 * @return int, score
+	 */
 	public int getScore() {
 		return score;
 	}
 	
+	/**
+	 * getter returning the definition attribute
+	 * @return String, definition
+	 */
 	public String getDefinition() {
 		return definition;
 	}
 	
+	/**
+	 * The findDefinition method finds the definition for wordp
+	 * @param wordp String, a word
+	 * @return String, definition of the parameter wordp
+	 * @throws IOException
+	 */
 	public static String findDefinition(String wordp) throws IOException {
 		String word = wordp.toUpperCase();
 		String separator = System.getProperty("file.separator");
@@ -98,6 +126,11 @@ public class ScrabbleWord {
 		return word_definition;
 	}
 	
+	/**
+	 * The calculateScore method calculates the score for the parameter word
+	 * @param word String, a word
+	 * @return int, the Scrabble score for only the letters composing the word
+	 */
 	public static int calculateScore(String word) {
 		HashMap<Character, Integer> letterValue = new HashMap<>();
 		letterValue.put('A', 1);
@@ -134,11 +167,20 @@ public class ScrabbleWord {
 		return score;
 	}
 
+	/**
+	 * This method overrides the built-in toString method
+	 * @return String, word attribute
+	 */
 	@Override
 	public String toString() {
 		return this.word;
 	}
 	
+	/**
+	 * This method overrides the built-in equals method
+	 * @return boolean: true,  if two ScrabbleWords have the same word attribute
+	 *                  false, otherwise
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (obj instanceof ScrabbleWord) {

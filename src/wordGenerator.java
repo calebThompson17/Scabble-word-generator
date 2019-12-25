@@ -3,19 +3,28 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.Math;
 import java.util.Scanner;
-import java.util.Stack;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
- * This class reads through the txt files produced in DocGenerator.java,
- *  taking the words and necessary information that the user desires
+ * This wordGenerator reads through the txt files produced in DocGenerator.java
+ *  and considers any possible Scrabble board,
+ *  analyzing possible words and making calculated moves.
  * 
  * @author Caleb Thompson
  * @version Version 1
  */
 public class wordGenerator {
 	
+	/**
+	 * The isScrabbleWord method scans the files
+	 *  within the "docs/wordLengthStartingWith" directory
+	 *  returning a boolean value determining whether the
+	 *  String parameter wordP value was found in those files
+	 * @param wordP String, word
+	 * @return boolean: true,  if wordP is a Scrabble word
+	 *                  false, if wordP is not a Scrabble word
+	 * @throws IOException
+	 */
 	public static boolean isScrabbleWord(String wordP) throws IOException {
 
 		String word = wordP.trim().toUpperCase();
@@ -1264,6 +1273,11 @@ public class wordGenerator {
 		return false; // Does not have the word in the scrabble dictionary
 	}
 	
+	/**
+	 * The randomLetterGenerator method returns a char[] with randomly generated letters
+	 * @param num int, length of the char[] returned
+	 * @return char[] containing randomly generated letters
+	 */
 	public static char[] randomLetterGenerator(int num) {
 		char[] returnChars = new char[num];
 		for (int i = 0; i < num; ++i) {
@@ -1275,6 +1289,14 @@ public class wordGenerator {
 		return returnChars;
 	}
 	
+	/**
+	 * The isSubpart method determines whether the parameter word
+	 *  is a subpart of another existing Scrabble word
+	 * @param word String, possible subpart
+	 * @return boolean: true,  if parameter word is a subpart
+	 *                  false, if parameter word is a subpart
+	 * @throws FileNotFoundException
+	 */
 	private static boolean isSubpart(String word) throws FileNotFoundException {
 		String separator = System.getProperty("file.separator");
 		String wordLength;
@@ -1343,6 +1365,14 @@ public class wordGenerator {
 		return false;
 	}
 	
+	/**
+	 * The characterArrayListToSetLengthScrabbleWordList method
+	 *  discovers all the possible Scrabble word combinations from the letters given
+	 * @param wordList ArrayList <ScrabbleWord>, list of Scrabble words
+	 * @param charList ArrayList <Character>, list of remaining characters to produce words
+	 * @param charWord ArrayList <Character>, list of characters building the current word
+	 * @throws IOException
+	 */
 	private static void characterArrayListToSetLengthScrabbleWordList(ArrayList <ScrabbleWord> wordList, ArrayList <Character> charList, ArrayList <Character> charWord) throws IOException {
 		int arrayLengthRemaining = charList.size();
 		for (int i = 0; i < arrayLengthRemaining; ++i) {
@@ -1403,6 +1433,14 @@ public class wordGenerator {
 		return;
 	}
 
+	/**
+	 * The charArrayToSetLengthScrabbleWordList method
+	 *  calls the characterArrayListToSetLengthScrabbleWordList private method
+	 *  with the proper additional parameters
+	 * @param wordList ArrayList <ScrabbleWord>, list of Scrabble words
+	 * @param charArrayp char[], letters that can be arranged in any manner
+	 * @throws IOException
+	 */
 	public static void charArrayToSetLengthScrabbleWordList(ArrayList <ScrabbleWord> wordList, char[] charArrayp) throws IOException {
 		if (charArrayp.length < 2) {
 			return;
@@ -1416,6 +1454,12 @@ public class wordGenerator {
 		return;
 	}
 	
+	/**
+	 * The sortByScrabbleScore method sorts the wordList
+	 *  in order from highest score to lowest score.
+	 *  If two words have the same score, they are ordered alphabetically.
+	 * @param wordList ArrayList <ScrabbleWord>, list of Scrabble words
+	 */
 	public static void sortByScrabbleScore(ArrayList <ScrabbleWord> wordList) {
 		boolean hasChanged = true;
 		while (hasChanged) {
@@ -1436,6 +1480,13 @@ public class wordGenerator {
 		return;
 	}
 	
+	/**
+	 * The printScrabbleWordList method prints the Scrabble wordList
+	 *  in the following format with 3 columns:
+	 *  Number of Words:  Word itself:  Word's Score:
+	 *  #:                Word:	        Score:
+	 * @param wordList ArrayList <ScrabbleWord>, list of Scrabble words
+	 */
 	public static void printScrabbleWordList(ArrayList <ScrabbleWord> wordList) {
 		System.out.println("#:\tWord:\tScore:");
 		for (int i = 0; i < wordList.size(); ++i) {
@@ -1454,10 +1505,11 @@ public class wordGenerator {
 			System.out.println(sWord.getWord() + " score: " + sWord.getScore());
 			System.out.println(sWord.getWord() + ": " + sWord.getDefinition());
 			
+			System.out.println();
 			ArrayList <ScrabbleWord> wordList = new ArrayList<>();
 			charArrayToSetLengthScrabbleWordList(wordList, word.toCharArray());
-			System.out.println("\n" + wordList);
-			printScrabbleWordList(wordList);
+//			System.out.println(wordList);
+//			printScrabbleWordList(wordList);
 			sortByScrabbleScore(wordList);
 			printScrabbleWordList(wordList);
 			
