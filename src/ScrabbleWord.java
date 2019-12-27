@@ -30,18 +30,18 @@ public class ScrabbleWord {
 	/**
 	 * Constructor for ScrabbleWord class.
 	 * @param word String, the word for which the ScrabbleWord will be modeled
-	 * @param startingX int, the X-coordinate of the startingLocation of the word on the board
-	 * @param startingY int, the Y-coordinate of the startingLocation of the word on the board
-	 * @param endingX int, the X-coordinate of the endingLocation of the word on the board
-	 * @param endingY int, the Y-coordinate of the endingLocation of the word on the board
+	 * @param startingRow int, the row of the startingLocation of the word on the board
+	 * @param startingColumn int, the column of the startingLocation of the word on the board
+	 * @param endingRow int, the row of the endingLocation of the word on the board
+	 * @param endingColumn int, the column of the endingLocation of the word on the board
 	 * @throws IOException
 	 */
-	public ScrabbleWord(String word, int startingX, int startingY, int endingX, int endingY) throws IOException {
+	public ScrabbleWord(String word, int startingRow, int startingColumn, int endingRow, int endingColumn) throws IOException {
 		this.word = word;
 		definition = findDefinition(word);
 		score = calculateScore(word);
-		startingLocation = new Point2D.Float(startingX, startingY);
-		endingLocation = new Point2D.Float(endingX, endingY);
+		startingLocation = new Point2D.Float(startingRow, startingColumn);
+		endingLocation = new Point2D.Float(endingRow, endingColumn);
 	}
 	
 	/**
@@ -69,31 +69,47 @@ public class ScrabbleWord {
 	}
 
 	/**
-	 * The setStartingRowLocation method sets the row, or X-coordinate
+	 * The setStartingRowLocation method sets the row
 	 *  of the object's startingLocation on a Scrabble board
-	 * @param x int, the row, or X-coordinate of the object's startingLocation
+	 * @param row int, the row of the object's startingLocation
 	 */
-	public void setStartingRowLocation(int x) {
-		startingLocation = new Point2D.Float(x, (float) startingLocation.getY());
+	public void setStartingRowLocation(int row) {
+		startingLocation = new Point2D.Float(row, (float) startingLocation.getY());
 	}
 	
 	/**
-	 * The setStartingColumnLocation method sets the column, or Y-coordinate
-	 *  of the object's startingLocation on a Scrabble board
-	 * @param y int, the column, or Y-coordinate of the object's startingLocation
+	 * getter returning the starting row location
+	 * @return int, row index
 	 */
-	public void setStartingColumnLocation(int y) {
-		startingLocation = new Point2D.Float((float) startingLocation.getX(), y);
+	public int getStartingRowLocation() {
+		return (int) startingLocation.getX();
 	}
 	
 	/**
-	 * The setStartingLocation sets the X- and Y- coordinates
+	 * The setStartingColumnLocation method sets the column
 	 *  of the object's startingLocation on a Scrabble board
-	 * @param x int, the row, or X-coordinate of the object's startingLocation
-	 * @param y int, the column, or Y-coordinate of the object's startingLocation
+	 * @param column int, the column of the object's startingLocation
 	 */
-	public void setStartingLocation(int x, int y) {
-		startingLocation = new Point2D.Float(x, y);
+	public void setStartingColumnLocation(int column) {
+		startingLocation = new Point2D.Float((float) startingLocation.getX(), column);
+	}
+	
+	/**
+	 * getter returning the starting column location
+	 * @return int, column index
+	 */
+	public int getStartingColumnLocation() {
+		return (int) startingLocation.getY();
+	}
+	
+	/**
+	 * The setStartingLocation sets the row and column coordinates
+	 *  of the object's startingLocation on a Scrabble board
+	 * @param row int, the row of the object's startingLocation
+	 * @param column int, the column of the object's startingLocation
+	 */
+	public void setStartingLocation(int row, int column) {
+		startingLocation = new Point2D.Float(row, column);
 	}
 	
 	/**
@@ -105,31 +121,47 @@ public class ScrabbleWord {
 	}
 
 	/**
-	 * The setEndingRowLocation method sets the row, or X-coordinate
+	 * The setEndingRowLocation method sets the row
 	 *  of the object's endingLocation on a Scrabble board
-	 * @param x int, the row, or X-coordinate of the object's endingLocation
+	 * @param row int, the row of the object's endingLocation
 	 */
-	public void setEndingRowLocation(int x) {
-		endingLocation = new Point2D.Float(x, (float) endingLocation.getY());
+	public void setEndingRowLocation(int row) {
+		endingLocation = new Point2D.Float(row, (float) endingLocation.getY());
 	}
 	
 	/**
-	 * The setEndingColumnLocation method sets the column, or Y-coordinate
-	 *  of the object's endingLocation on a Scrabble board
-	 * @param y int, the column, or Y-coordinate of the object's endingLocation
+	 * getter returning the ending row location
+	 * @return int, row index
 	 */
-	public void setEndingColumnLocation(int y) {
-		endingLocation = new Point2D.Float((float) endingLocation.getX(), y);
+	public int getEndingRowLocation() {
+		return (int) endingLocation.getX();
 	}
 	
 	/**
-	 * The setEndingLocation sets the X- and Y- coordinates
+	 * The setEndingColumnLocation method sets the column
 	 *  of the object's endingLocation on a Scrabble board
-	 * @param x int, the row, or X-coordinate of the object's endingLocation
-	 * @param y int, the column, or Y-coordinate of the object's endingLocation
+	 * @param column int, the column of the object's endingLocation
 	 */
-	public void setEndingLocation(int x, int y) {
-		endingLocation = new Point2D.Float(x, y);
+	public void setEndingColumnLocation(int column) {
+		endingLocation = new Point2D.Float((float) endingLocation.getX(), column);
+	}
+	
+	/**
+	 * getter returning the ending column location
+	 * @return int, column index
+	 */
+	public int getEndingColumnLocation() {
+		return (int) endingLocation.getY();
+	}
+	
+	/**
+	 * The setEndingLocation sets the row and column coordinates
+	 *  of the object's endingLocation on a Scrabble board
+	 * @param row int, the row of the object's endingLocation
+	 * @param column int, the column of the object's endingLocation
+	 */
+	public void setEndingLocation(int row, int column) {
+		endingLocation = new Point2D.Float(row, column);
 	}
 	
 	/**

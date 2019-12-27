@@ -16,13 +16,31 @@ import java.util.ArrayList;
 public class wordGenerator {
 	// class attributes
 	private char[] rack;
-	ArrayList <ScrabbleWord> wordList;
+	private ArrayList <ScrabbleWord> wordList;
+	private char[][] scrabbleBoard;
 	
 	/**
 	 * constructor for wordGenerator class
 	 */
 	public wordGenerator() {
 		this.rack = new char[] {'0', '0', '0', '0', '0', '0', '0'};
+		this.wordList = new ArrayList<ScrabbleWord>();
+		this.scrabbleBoard = new char[][] 
+			{{'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+			 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'}};
 	}
 	
 	/**
@@ -77,6 +95,25 @@ public class wordGenerator {
 	}
 	
 	/**
+	 * The setScrabbleBoard method sets an object's scrabbleBoard attribute
+	 * @param board char[][], a 15 by 15 char 2D array representing a Scrabble board
+	 */
+	public void setScrabbleBoard(char[][] board) {
+		if ((board.length == 15) && (board[0].length == 15)) {
+			for (int row = 0; row < board.length; ++row) {
+				for (int col = 0; col < board[0].length; ++col) {
+					char element = board[row][col];
+					if (!((element >= 'A') && (element <= 'Z')
+							|| (element == '0'))) {
+						return;
+					}
+				}
+			}
+			this.scrabbleBoard = board;
+		}
+	}
+	
+	/**
 	 * The clearWordList method clears an object's wordList attribute
 	 */
 	public void clearWordList() {
@@ -84,15 +121,19 @@ public class wordGenerator {
 	}
 	
 	
-	public void getHorizontalPerpendicularWordsInOneRow(char[] row, int rowNum, int numCharsToAdd) {
-		// method stub
-	}
-	
-	
 	public void getHorizontalPerpendicularWordsInOneRow(
 			ArrayList <ScrabbleWord> wordList, ArrayList <Character> charList,
 			ArrayList <Character> charWord, char[] row, int numCharsToAdd) {
 		// method stub
+	}
+	
+	
+	public void getHorizontalPerpendicularWordsInOneRow(char[] row, int rowNum, int numCharsToAdd) {
+		
+		
+		// find min and max indexes for rack starting letter
+		//  scan the lines from right to left
+		//  building the words from left to right
 	}
 	
 	/**
@@ -1610,6 +1651,25 @@ public class wordGenerator {
 			wordGenerator wd = new wordGenerator();
 			char[] charArray = randomLetterGenerator(7);
 			wd.setLettersOnRack(charArray);
+
+			char[][] scrabbleBoard = new char[][] 
+				{{'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', 'A', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
+				 {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'}};
+			wd.setScrabbleBoard(scrabbleBoard);
+			
 			
 			// Build the methods to use the letters in the rack to analyze a Scrabble board
 			//  Analyze horizontal methods first
