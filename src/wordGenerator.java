@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.lang.Math;
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * This wordGenerator reads through the txt files produced in DocGenerator.java
@@ -17,6 +16,7 @@ import java.util.Arrays;
 public class wordGenerator {
 	// class attributes
 	private char[] rack;
+	ArrayList <ScrabbleWord> wordList;
 	
 	/**
 	 * constructor for wordGenerator class
@@ -47,10 +47,10 @@ public class wordGenerator {
 	 * @param charArray char[], array of Scrabble letters
 	 */
 	public void setLettersOnRack(char[] charArray) {
+		int index = 0;
 		for (int i = 0; i < charArray.length; ++i) {
-			int index = 0;
 			boolean foundOpenSpace = false;
-			for (int j = 0; j < rack.length; ++j) {
+			for (int j = index; j < rack.length; ++j) {
 				if (rack[j] == '0') {
 					index = j;
 					foundOpenSpace = true;
@@ -74,6 +74,25 @@ public class wordGenerator {
 	 */
 	public char getLetterFromRack(int i) {
 		return rack[i];
+	}
+	
+	/**
+	 * The clearWordList method clears an object's wordList attribute
+	 */
+	public void clearWordList() {
+		wordList.clear();
+	}
+	
+	
+	public void getHorizontalPerpendicularWordsInOneRow(char[] row, int rowNum, int numCharsToAdd) {
+		// method stub
+	}
+	
+	
+	public void getHorizontalPerpendicularWordsInOneRow(
+			ArrayList <ScrabbleWord> wordList, ArrayList <Character> charList,
+			ArrayList <Character> charWord, char[] row, int numCharsToAdd) {
+		// method stub
 	}
 	
 	/**
@@ -1358,7 +1377,7 @@ public class wordGenerator {
 	 *                  false, if parameter word is a subpart
 	 * @throws FileNotFoundException
 	 */
-	private static boolean isSubpart(String word) throws FileNotFoundException {
+	private static boolean isSubpart(String word) throws IOException {
 		String separator = System.getProperty("file.separator");
 		String wordLength;
 		switch (word.length()) {
@@ -1557,9 +1576,14 @@ public class wordGenerator {
 		return;
 	}
 	
+	/**
+	 * The testingStaticMethods method provides some of the original tests
+	 *  used for testing this class's static methods.
+	 * @throws IOException
+	 */
 	public static void testingStaticMethods() throws IOException {
-		String word = new String(randomLetterGenerator(7));
-//		String word = "SH";
+//		String word = new String(randomLetterGenerator(7));
+		String word = "QXKGEIUR";
 		System.out.println(word + " is a word: " + isScrabbleWord(word));
 		ScrabbleWord sWord = new ScrabbleWord(word);
 		System.out.println(sWord.getWord() + " score: " + sWord.getScore());
@@ -1576,15 +1600,23 @@ public class wordGenerator {
 	
 	public static void main(String[] args) {
 		try {
-			String word = "SH";
+			String word = "at";
 			System.out.println(word + " is a word: " + isScrabbleWord(word));
+			ScrabbleWord sWord = new ScrabbleWord(word);
+			System.out.println(sWord.getWord() + " score: " + sWord.getScore());
+			System.out.println(sWord.getWord() + ": " + sWord.getDefinition());
 //			testingStaticMethods();
 			
 			wordGenerator wd = new wordGenerator();
 			char[] charArray = randomLetterGenerator(7);
-//			char[] charArray = {' ', ' ', ' ', ' ', ' ', ' ', ' '};
-			System.out.println(charArray + " is the rack");
-			wd.setLettersOnRack( new char[] {' ', ' '});
+			wd.setLettersOnRack(charArray);
+			
+			// Build the methods to use the letters in the rack to analyze a Scrabble board
+			//  Analyze horizontal methods first
+			//  Analyze vertical methods next
+			//  Analyze parallel methods
+			
+			// Consider the edges of the board
 			
 			
 			System.out.println("\nFinished executing wordGenerator");

@@ -1,3 +1,4 @@
+import java.awt.geom.Point2D;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
@@ -13,16 +14,34 @@ public class ScrabbleWord {
 	private String word;
 	private int score;
 	private String definition;
+	private Point2D.Float startingLocation;
+	private Point2D.Float endingLocation;
+	
 	
 	/**
 	 * Constructor for the ScrabbleWord class.
 	 * @param word String, the word for which the ScrabbleWord will be modeled
 	 * @throws IOException
 	 */
-	ScrabbleWord(String word) throws IOException{
+	public ScrabbleWord(String word) throws IOException{
+		this(word, -1, -1, -1, -1);
+	}
+	
+	/**
+	 * Constructor for ScrabbleWord class.
+	 * @param word String, the word for which the ScrabbleWord will be modeled
+	 * @param startingX int, the X-coordinate of the startingLocation of the word on the board
+	 * @param startingY int, the Y-coordinate of the startingLocation of the word on the board
+	 * @param endingX int, the X-coordinate of the endingLocation of the word on the board
+	 * @param endingY int, the Y-coordinate of the endingLocation of the word on the board
+	 * @throws IOException
+	 */
+	public ScrabbleWord(String word, int startingX, int startingY, int endingX, int endingY) throws IOException {
 		this.word = word;
 		definition = findDefinition(word);
 		score = calculateScore(word);
+		startingLocation = new Point2D.Float(startingX, startingY);
+		endingLocation = new Point2D.Float(endingX, endingY);
 	}
 	
 	/**
@@ -47,6 +66,78 @@ public class ScrabbleWord {
 	 */
 	public String getDefinition() {
 		return definition;
+	}
+
+	/**
+	 * The setStartingRowLocation method sets the row, or X-coordinate
+	 *  of the object's startingLocation on a Scrabble board
+	 * @param x int, the row, or X-coordinate of the object's startingLocation
+	 */
+	public void setStartingRowLocation(int x) {
+		startingLocation = new Point2D.Float(x, (float) startingLocation.getY());
+	}
+	
+	/**
+	 * The setStartingColumnLocation method sets the column, or Y-coordinate
+	 *  of the object's startingLocation on a Scrabble board
+	 * @param y int, the column, or Y-coordinate of the object's startingLocation
+	 */
+	public void setStartingColumnLocation(int y) {
+		startingLocation = new Point2D.Float((float) startingLocation.getX(), y);
+	}
+	
+	/**
+	 * The setStartingLocation sets the X- and Y- coordinates
+	 *  of the object's startingLocation on a Scrabble board
+	 * @param x int, the row, or X-coordinate of the object's startingLocation
+	 * @param y int, the column, or Y-coordinate of the object's startingLocation
+	 */
+	public void setStartingLocation(int x, int y) {
+		startingLocation = new Point2D.Float(x, y);
+	}
+	
+	/**
+	 * getter returning the startingLocation attribute
+	 * @return Point2D.Float, startingLocation
+	 */
+	public Point2D.Float getStartingLocation(){
+		return startingLocation;
+	}
+
+	/**
+	 * The setEndingRowLocation method sets the row, or X-coordinate
+	 *  of the object's endingLocation on a Scrabble board
+	 * @param x int, the row, or X-coordinate of the object's endingLocation
+	 */
+	public void setEndingRowLocation(int x) {
+		endingLocation = new Point2D.Float(x, (float) endingLocation.getY());
+	}
+	
+	/**
+	 * The setEndingColumnLocation method sets the column, or Y-coordinate
+	 *  of the object's endingLocation on a Scrabble board
+	 * @param y int, the column, or Y-coordinate of the object's endingLocation
+	 */
+	public void setEndingColumnLocation(int y) {
+		endingLocation = new Point2D.Float((float) endingLocation.getX(), y);
+	}
+	
+	/**
+	 * The setEndingLocation sets the X- and Y- coordinates
+	 *  of the object's endingLocation on a Scrabble board
+	 * @param x int, the row, or X-coordinate of the object's endingLocation
+	 * @param y int, the column, or Y-coordinate of the object's endingLocation
+	 */
+	public void setEndingLocation(int x, int y) {
+		endingLocation = new Point2D.Float(x, y);
+	}
+	
+	/**
+	 * getter returning the startingLocation attribute
+	 * @return Point2D.Float, endingLocation
+	 */
+	public Point2D.Float getEndingLocation(){
+		return endingLocation;
 	}
 	
 	/**
@@ -178,14 +269,16 @@ public class ScrabbleWord {
 	
 	/**
 	 * This method overrides the built-in equals method
-	 * @return boolean: true,  if two ScrabbleWords have the same word attribute
+	 * @return boolean: true,  if two ScrabbleWords have the same word and locations attributes
 	 *                  false, otherwise
 	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (obj instanceof ScrabbleWord) {
 			ScrabbleWord other = (ScrabbleWord) obj;
-			if (this.word == other.word) {
+			if ((this.word == other.word) && 
+					(this.startingLocation == other.startingLocation) && 
+					(this.endingLocation == other.endingLocation)) {
 				return true;
 			}
 		}
