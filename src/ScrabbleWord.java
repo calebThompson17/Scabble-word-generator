@@ -180,57 +180,7 @@ public class ScrabbleWord {
 	 */
 	public static String findDefinition(String wordp) throws IOException {
 		String word = wordp.toUpperCase();
-		String separator = System.getProperty("file.separator");
-		String wordLength;
-		switch (word.length()) {
-		case 2:
-			wordLength = "two";
-			break;
-		case 3:
-			wordLength = "three";
-			break;
-		case 4:
-			wordLength = "four";
-			break;
-		case 5:
-			wordLength = "five";
-			break;
-		case 6:
-			wordLength = "six";
-			break;
-		case 7:
-			wordLength = "seven";
-			break;
-		case 8:
-			wordLength = "eight";
-			break;
-		case 9:
-			wordLength = "nine";
-			break;
-		case 10:
-			wordLength = "ten";
-			break;
-		case 11:
-			wordLength = "eleven";
-			break;
-		case 12:
-			wordLength = "twelve";
-			break;
-		case 13:
-			wordLength = "thirteen";
-			break;
-		case 14:
-			wordLength = "fourteen";
-			break;
-		case 15:
-			wordLength = "fifteen";
-			break;
-		default:
-			wordLength = "no length";
-		}
-		String filename = "docs" + separator + "defineWordLengthStartingWith" + 
-		        separator + wordLength + "LetterWords" + separator + "define" + 
-				wordLength + "LetterWordsStartingWith" + word.charAt(0);
+		String filename = DocGenerator.getDefineWordLengthStartingWithFileName(word.length(), word.charAt(0));
 		Scanner scan = new Scanner(new File(filename));
 		String word_definition = "No definition";
 		while (scan.hasNextLine()) {

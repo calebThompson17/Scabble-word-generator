@@ -6589,6 +6589,114 @@ public class DocGenerator {
 		pw14Z.close();
 	}
 	
+	/**
+	 * The digitToLetterNumberConverter method converts
+	 *  a number in numerical form to its alphabetically spelled-out form
+	 * @param num int, a number in its numerical form
+	 * @return String, the num in its alphabetically spelled-out form
+	 */
+	private static String digitToLetterNumberConverter(int num) {
+		String numberInLetters;
+		switch (num) {
+		case 2:
+			numberInLetters = "two";
+			break;
+		case 3:
+			numberInLetters = "three";
+			break;
+		case 4:
+			numberInLetters = "four";
+			break;
+		case 5:
+			numberInLetters = "five";
+			break;
+		case 6:
+			numberInLetters = "six";
+			break;
+		case 7:
+			numberInLetters = "seven";
+			break;
+		case 8:
+			numberInLetters = "eight";
+			break;
+		case 9:
+			numberInLetters = "nine";
+			break;
+		case 10:
+			numberInLetters = "ten";
+			break;
+		case 11:
+			numberInLetters = "eleven";
+			break;
+		case 12:
+			numberInLetters = "twelve";
+			break;
+		case 13:
+			numberInLetters = "thirteen";
+			break;
+		case 14:
+			numberInLetters = "fourteen";
+			break;
+		case 15:
+			numberInLetters = "fifteen";
+			break;
+		default:
+			numberInLetters = "no length";
+		}
+		return numberInLetters;
+	}
+	
+	/**
+	 * The getDefineWordLengthStartingWithFileName method
+	 *  returns the filename for files under 
+	 *  the "docs/defineWordLengthStartingWith" directory
+	 * @param length int, the word's length
+	 * @param startingLetter char, the first Letter of the word
+	 * @return
+	 */
+	public static String getDefineWordLengthStartingWithFileName(int length, char startingLetter) {
+		String separator = System.getProperty("file.separator");
+		String wordLength = digitToLetterNumberConverter(length);
+		String filename = "docs" + separator + "defineWordLengthStartingWith" + 
+		        separator + wordLength + "LetterWords" + separator + "define" + 
+				wordLength + "LetterWordsStartingWith" + startingLetter;
+		return filename;
+	}
+
+	/**
+	 * The getSubpartStartingWithFileName method
+	 *  returns the filename for files under 
+	 *  the "docs/subpartStartingWith" directory
+	 * @param length int, the word's length
+	 * @param startingLetter char, the first Letter of the word
+	 * @return
+	 */
+	public static String getSubpartStartingWithFileName(int length, char startingLetter) {
+		String separator = System.getProperty("file.separator");
+		String wordLength = digitToLetterNumberConverter(length);
+		String filename = "docs" + separator + "subpartStartingWith" + 
+		        separator + wordLength + "LetterSubparts" + separator + 
+				wordLength + "LetterSubpartsStartingWith" + startingLetter;
+		return filename;
+	}
+
+	/**
+	 * The getWordLengthStartingWithFileName method
+	 *  returns the filename for files under 
+	 *  the "docs/wordLengthStartingWith" directory
+	 * @param length int, the word's length
+	 * @param startingLetter char, the first Letter of the word
+	 * @return
+	 */
+	public static String getWordLengthStartingWithFileName(int length, char startingLetter) {
+		String separator = System.getProperty("file.separator");
+		String wordLength = digitToLetterNumberConverter(length);
+		String filename = "docs" + separator + "wordLengthStartingWith" + 
+		        separator + wordLength + "LetterWords" + separator + 
+				wordLength + "LetterWordsStartingWith" + startingLetter;
+		return filename;
+	}
+	
 	public static void main(String[] args) {
 		try {
 			generateMasterWordListCsvFile();
