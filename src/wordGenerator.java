@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.Math;
+import java.time.Instant;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -295,8 +296,22 @@ public class wordGenerator {
 		return;
 	}
 	
-	private ArrayList<String> wordsContainingEnoughLetters(char[] lettersOnBoard){
+	private ArrayList<String> wordsContainingEnoughLetters(char[] lettersOnBoard) throws FileNotFoundException{
 		ArrayList<String> wordsContainingEnoughLettersList = new ArrayList<>();
+		ArrayList<Character> lettersRemaining = new ArrayList<>();
+		for (int i = 0; i < rack.length; ++i) {
+			lettersRemaining.add(rack[i]);
+		}
+		for (int i = 0; i < lettersOnBoard.length; ++i) {
+			if (!Character.isDigit(lettersOnBoard[i])) {
+				lettersRemaining.add(rack[i]);
+			}
+		}
+		Scanner scan = new Scanner(new File(DocGenerator.getWordLengthStartingWithFileName(3, 'A')));
+		scan.close();
+//		Scanner scan = new Scanner(new File(DocGenerator.getWordLengthStartingWithFileName(3, 'A')));
+//		scan.close();
+		//Not exactly sure how to solve the multiple scanner problem right now
 		
 		
 		
@@ -362,6 +377,27 @@ public class wordGenerator {
 		return;
 	}
 	
+	public static void printTimeDifference(Instant start, Instant end) {
+		System.out.println("Using printTimeDifference method:");
+		// record this info in a separate doc for future comparison purposes
+		long startEpochSeconds = start.getEpochSecond();
+		int startNanoSeconds = start.getNano();
+		long endEpochSeconds = end.getEpochSecond();
+		int endNanoSeconds = end.getNano();
+		System.out.println("Start time: " + startEpochSeconds + "." + startNanoSeconds);
+		System.out.println("End time: " + endEpochSeconds + "." + endNanoSeconds);
+		long epochSecondsDifference = endEpochSeconds - startEpochSeconds;
+		int nanoSecondsDifference = endNanoSeconds - startNanoSeconds;
+		while (nanoSecondsDifference < 0) {
+			--epochSecondsDifference;
+			nanoSecondsDifference += 1000000000;
+		}
+		System.out.println("This program took:");
+		System.out.println(String.format("%,d seconds and ", epochSecondsDifference));
+		System.out.println(String.format("%,d nanoseconds", nanoSecondsDifference));
+		return;
+	}
+	
 	/**
 	 * The testingStaticMethods method provides some of the original tests
 	 *  used for testing this class's static methods.
@@ -370,7 +406,7 @@ public class wordGenerator {
 	public static void testingStaticMethods() throws IOException {
 //		String word = new String(randomLetterGenerator(7));
 //		String word = "nickdehoust";
-		String word = "HOUSE";
+		String word = "MICHAEL";
 //		System.out.println(word + " is a word: " + isScrabbleWord(word));
 		ScrabbleWord sWord = new ScrabbleWord(word);
 //		System.out.println(sWord.getWord() + " score: " + sWord.getScore());
@@ -388,6 +424,7 @@ public class wordGenerator {
 	
 	public static void main(String[] args) {
 		try {
+			Instant startTime = Instant.now();
 			String word = "HOUSE";
 			System.out.println(word + " is a word: " + isScrabbleWord(word));
 			ScrabbleWord sWord = new ScrabbleWord(word);
@@ -428,6 +465,8 @@ public class wordGenerator {
 			// Consider the edges of the board
 			
 			
+			Instant endTime = Instant.now();
+			printTimeDifference(startTime, endTime);
 			System.out.println("\nFinished executing wordGenerator");
 		}
 		catch (IOException excpt) {
